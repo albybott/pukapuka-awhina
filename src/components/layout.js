@@ -2,13 +2,24 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 import Header from './header'
 import './layout.css'
 
-const Test = styled.div`
-  background-color: lightcyan;
+const GlobalStyle = createGlobalStyle`  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1 {
+    color: lightseagreen;
+  }
+`
+
+const Test = styled.h1`
+  color: lightsalmon;
 `
 
 const Layout = ({ children }) => (
@@ -34,6 +45,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
+        <GlobalStyle />
         <div
           style={{
             margin: '0 auto',

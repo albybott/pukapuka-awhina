@@ -11,20 +11,29 @@ Kick off your project with this default boilerplate. This barebones starter ship
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-## 🚀 Quick start
+## 🚀 Setup
 
-1.  **Create a Gatsby site.**
+1.  **Styled Components**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Visual primitives for the component age.
+    [Styled Components Docs](https://www.styled-components.com/docs)
 
     ```sh
-    # create a new Gatsby site using the default starter
-    npx gatsby new my-default-starter
+    # Install
+    npm install --save gatsby-plugin-styled-components styled-components babel-plugin-styled-components
     ```
 
-1.  **Start developing.**
+    Global Style
 
-    Navigate into your new site’s directory and start it up.
+    Theme Provider
+
+1.  **CSS Resets.**
+
+    Normalize
+
+    Reset
+
+    Typgraphy.js
 
     ```sh
     cd my-default-starter/
