@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Te Pukapuka Awhina',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -27,8 +27,12 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-styled-components`,
+      options: {},
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
       options: {
-        // Add any options here
+        pathToConfigModule: `src/styles/typography`, // The path to the typography config file
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
