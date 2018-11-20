@@ -5,19 +5,21 @@ import styled from 'styled-components'
 const SidebarWrapper = styled(Box)`
   background-color: lightgreen;
 
-  top: 5rem;
+  top: 7.75rem;
   height: 100vh;
-  width: 320px;
+  width: 15rem;
   position: fixed;
-  z-index: 10;
+  z-index: 11;
 
   ${props => props.theme.media.phone`display: none;`};
 `
 
 const SidebarHeader = styled(Box)`
-  background-color: lightgrey;
-  padding: 0;
-  margin: 0;
+  height: 3.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 `
 
 const SidebarContent = styled(Box)`
@@ -26,7 +28,7 @@ const SidebarContent = styled(Box)`
 
 const Sidebar = props => (
   <SidebarWrapper>
-    <SidebarHeader>SB Header</SidebarHeader>
+    <SidebarHeader bg='secondary' pl='40px' pr='8px'>SB Header</SidebarHeader>
     <SidebarContent>Content</SidebarContent>
   </SidebarWrapper>
 )

@@ -3,24 +3,33 @@ import { Box } from 'rebass'
 import styled from 'styled-components'
 
 const ContentWrapper = styled(Box)`
-  background-color: lightseagreen;
-  text-align: center;
-  color: white;
-  padding: 0.5rem;
+  background-color: lightgrey;
 
   position: fixed;
-  top: 5rem;
-  left: 320px;
+  top: 7.75rem;
   height: 100vh;
   width: 100%;
 
+  padding: 0 0 0 20rem;
+
   z-index: 10;
 
-  ${props => props.theme.media.phone`left: 0px;`};
+  ${props => props.theme.media.phone`
+    padding: 0;
+  `};
+`
+
+const ConentContainer = styled(Box)`
+  max-width: 36.4rem;
+  position: relative;
+  margin: 0px auto;
+  padding: 2.1rem 1.05rem 4.9rem;
 `
 
 const Content = ({ children }) => (
-  <ContentWrapper>{children}</ContentWrapper>
+  <ContentWrapper>
+    <ConentContainer>{children}</ConentContainer>
+  </ContentWrapper>
 )
 
 export default Content

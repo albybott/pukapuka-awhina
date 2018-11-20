@@ -12,8 +12,8 @@ const Header = styled(Box)`
   left: 0px;
   width: 100%;
 
-  top: 2.5rem;
-  height: 2.5rem;
+  top: 3.25rem;
+  height: 4.5rem;
 
   display: flex;
   flex-direction: column;

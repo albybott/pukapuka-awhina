@@ -6,7 +6,7 @@ const typography = new Typography({
   // funstonTheme,
 
   includeNormalize: false, // Dont add normalize.css (added in the GlobalStyle)
-  blockMarginBottom: 0, // Default margin bottom for all block elements
+  // blockMarginBottom: 0, // Default margin bottom for all block elements
   baseFontSize: '18px',
   baseLineHeight: 1.666,
   headerFontFamily: [

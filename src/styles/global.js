@@ -7,15 +7,13 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle` 
   ${styledNormalize}
   
-  body {
+  img {
     padding: 0;
     margin: 0;
-
-    font-size: 200%;
   }
   
   h1 {
-    color: ${props => props.theme.colors['secondary']};
+    color: ${props => props.theme.main};
   }
 `
 
