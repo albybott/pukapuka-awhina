@@ -22,7 +22,7 @@ const BannerWrapper = styled(Box)`
 `
 
 const Banner = props => (
-  <BannerWrapper bg="purple">
+  <BannerWrapper>
     <Box>
       <Link>Watch</Link>: “Rise of the Content Mesh: Webcast with Contentful and
       Gatsby”.

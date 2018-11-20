@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { Box, Image } from 'rebass'
 import styled from 'styled-components'
 
-import Logo from '../images/gatsby-icon.svg'
+import Logo from '../../images/gatsby-icon.svg'
 
 const Header = styled(Box)`
   padding: 0 0 0 0.5rem;

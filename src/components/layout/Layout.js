@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Wrapper from './wrapper'
-import theme from '../styles/theme'
+import theme from '../../styles/theme'
 import { ThemeProvider } from 'styled-components'
+
+import Wrapper from './Wrapper'
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>

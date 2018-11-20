@@ -52,7 +52,6 @@ const theme = {
     lightgray: '#f6f6ff',
   },
   space: [0, 4, 8, 16, 24, 32, 48, 56, 64, 128, 256],
-  breakpoints: ['32em', '48em', '90em'],
   fonts: {
     sans: 'system-ui, sans-serif',
     mono: 'Menlo, monospace',

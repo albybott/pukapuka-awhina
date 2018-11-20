@@ -23,19 +23,45 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     npm install --save gatsby-plugin-styled-components styled-components babel-plugin-styled-components
     ```
 
-    Global Style
+    ***Theme Provider***
+    The theme provider makes the main theme configuration available the application
+    
+    src/styles/theme.js
 
-    Theme Provider
+    This means the values in the theme file can be used with the styled components css and is also utilised by Rebass
+    The theme file also includes a media query helper function which lets you do the following:
 
-1.  **CSS Resets.**
+    ```js
+    ${props => props.theme.media.phone`color: ${props.theme.main}`};
+    ```
 
-    Normalize CSS
+    ***Global Styles***
+    [GlobalStyle](https://www.styled-components.com/docs/api#createglobalstyle)
+
+    Global styles is part of the Styled Components Library and provides a centralised global css stylesheet
+
+    src/styles/global.js
+
+    It has access the Theme Provider so you can do things like:
+
+    ```css
+    h1 {
+      color: ${props => props.theme.colors['secondary']};
+    }
+    ``` 
+
+1.  **CSS Helpers**
+
+    ***Normalize CSS***
     [styled-normalize](https://github.com/sergeysova/styled-normalize)
 
     CSS-normalize library for styled-components.
 
-    Typgraphy.js
+    ***Typgraphy.js***
     [gatsby-plugin-typography](https://www.gatsbyjs.org/packages/gatsby-plugin-typography/?=typ)
+
+    Configuration File:
+    src/styles/typography
 
     ```sh
     cd my-default-starter/

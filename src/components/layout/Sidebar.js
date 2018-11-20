@@ -10,6 +10,8 @@ const SidebarWrapper = styled(Box)`
   width: 320px;
   position: fixed;
   z-index: 10;
+
+  ${props => props.theme.media.phone`display: none;`};
 `
 
 const SidebarHeader = styled(Box)`
