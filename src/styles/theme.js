@@ -52,6 +52,10 @@ const theme = {
     lightgray: '#f6f6ff',
   },
   space: [0, 4, 8, 16, 24, 32, 48, 56, 64, 128, 256],
+  bannerHeight: ['3.25rem'],
+  headerHeight: ['3.25rem'],
+  sidebarWidth: ['10rem', '12rem', '17rem', '20rem'],
+  totalHeadHeight: '6.5rem',
   fonts: {
     sans: 'system-ui, sans-serif',
     mono: 'Menlo, monospace',

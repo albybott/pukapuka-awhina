@@ -8,7 +8,7 @@ const BannerWrapper = styled(Box)`
   top: 0px;
   width: 100%;
   padding: 0 0 0 0.5rem;
-  height: 3.25rem;
+  height: ${props => props.theme.bannerHeight};
 
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@ const BannerWrapper = styled(Box)`
 `
 
 const Banner = props => (
-  <BannerWrapper bg='purple'>
+  <BannerWrapper bg="purple">
     <Box>
       <Link>Watch</Link>: “Rise of the Content Mesh: Webcast with Contentful and
       Gatsby”.

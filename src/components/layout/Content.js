@@ -6,24 +6,34 @@ const ContentWrapper = styled(Box)`
   background-color: lightgrey;
 
   position: fixed;
-  top: 7.75rem;
+  top: ${props => props.theme.totalHeadHeight};
   height: 100vh;
   width: 100%;
-
-  padding: 0 0 0 20rem;
-
   z-index: 10;
 
-  ${props => props.theme.media.tablet`
-    padding: 0;
-  `};
+  padding: 0 0 0 ${props => props.theme.sidebarWidth[3]};
+
+  ${props =>
+    props.theme.media.laptop`padding: 0 0 0 ${props =>
+      props.theme.sidebarWidth[2]}`};
+
+  ${props =>
+    props.theme.media.tablet`padding: 0 0 0 ${props =>
+      props.theme.sidebarWidth[1]}`};
+
+  ${props => props.theme.media.phone`padding: 0`};
 `
 
 const ConentContainer = styled(Box)`
   max-width: 36.4rem;
   position: relative;
   margin: 0px auto;
-  padding: 2.1rem 1.05rem 4.9rem;
+  padding: 2rem;
+
+  /* remove the top header from any first element */
+  * > :first-child {
+    margin-top: 0 !important;
+  }
 `
 
 const Content = ({ children }) => (

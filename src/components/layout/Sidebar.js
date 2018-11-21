@@ -5,13 +5,20 @@ import styled from 'styled-components'
 const SidebarWrapper = styled(Box)`
   background-color: lightgreen;
 
-  top: 7.75rem;
+  top: ${props => props.theme.totalHeadHeight};
   height: 100vh;
-  width: 15rem;
+  width: ${props => props.theme.sidebarWidth[3]};
   position: fixed;
   z-index: 11;
 
-  ${props => props.theme.media.tablet`display: none;`};
+  ${props =>
+    props.theme.media.desktop`width: ${props => props.theme.sidebarWidth[3]}`};
+  ${props =>
+    props.theme.media.laptop`width: ${props => props.theme.sidebarWidth[2]}`};
+  ${props =>
+    props.theme.media.tablet`width: ${props => props.theme.sidebarWidth[1]}`};
+
+  ${props => props.theme.media.phone`display: none;`};
 `
 
 const SidebarHeader = styled(Box)`

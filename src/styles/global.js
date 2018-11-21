@@ -8,6 +8,9 @@ const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
   
   html{
+    /* this will ensure border is included with box items   */
+    box-sizing: border-box;
+
     /* default font size - current using max-width in theme.js (Desktop first) */
     font-size: 1.3125em;
 

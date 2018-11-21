@@ -12,8 +12,8 @@ const Header = styled(Box)`
   left: 0px;
   width: 100%;
 
-  top: 3.25rem;
-  height: 4.5rem;
+  top: ${props => props.theme.bannerHeight};
+  height: ${props => props.theme.headerHeight};
 
   display: flex;
   flex-direction: column;
