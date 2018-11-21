@@ -11,7 +11,7 @@ const SidebarWrapper = styled(Box)`
   position: fixed;
   z-index: 11;
 
-  ${props => props.theme.media.phone`display: none;`};
+  ${props => props.theme.media.tablet`display: none;`};
 `
 
 const SidebarHeader = styled(Box)`
@@ -28,7 +28,9 @@ const SidebarContent = styled(Box)`
 
 const Sidebar = props => (
   <SidebarWrapper>
-    <SidebarHeader bg='secondary' pl='40px' pr='8px'>SB Header</SidebarHeader>
+    <SidebarHeader bg="secondary" pl="40px" pr="8px">
+      SB Header
+    </SidebarHeader>
     <SidebarContent>Content</SidebarContent>
   </SidebarWrapper>
 )

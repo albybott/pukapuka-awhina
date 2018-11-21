@@ -7,6 +7,16 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle` 
   ${styledNormalize}
   
+  html{
+    /* default font size - current using max-width in theme.js (Desktop first) */
+    font-size: 1.3125em;
+
+    ${props => props.theme.media.desktop`font-size: 1.3125em`};
+    ${props => props.theme.media.laptop`font-size: 1.125em`};
+    ${props => props.theme.media.tablet`font-size: 1.0625em;`};
+    ${props => props.theme.media.phone`font-size: 1em;`};
+  }
+
   img {
     padding: 0;
     margin: 0;

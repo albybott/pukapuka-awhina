@@ -14,7 +14,7 @@ const ContentWrapper = styled(Box)`
 
   z-index: 10;
 
-  ${props => props.theme.media.phone`
+  ${props => props.theme.media.tablet`
     padding: 0;
   `};
 `
