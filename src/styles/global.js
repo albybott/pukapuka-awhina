@@ -12,12 +12,12 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 
     /* default font size - current using max-width in theme.js (Desktop first) */
-    font-size: 1.3125em;
+    font-size: 1.2rem;
 
-    ${props => props.theme.media.desktop`font-size: 1.3125em`};
-    ${props => props.theme.media.laptop`font-size: 1.125em`};
-    ${props => props.theme.media.tablet`font-size: 1.0625em;`};
-    ${props => props.theme.media.phone`font-size: 1em;`};
+    ${props => props.theme.media.desktop`font-size: 1.2rem`};
+    ${props => props.theme.media.laptop`font-size: 1.1rem`};
+    ${props => props.theme.media.tablet`font-size: 1.05rem;`};
+    ${props => props.theme.media.phone`font-size: 1rem;`};
   }
 
   img {

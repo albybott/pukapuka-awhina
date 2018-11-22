@@ -3,7 +3,7 @@ import { Box } from 'rebass'
 import styled from 'styled-components'
 
 const ContentWrapper = styled(Box)`
-  background-color: lightgrey;
+  background-color: white;
 
   position: fixed;
   top: ${props => props.theme.totalHeadHeight};
