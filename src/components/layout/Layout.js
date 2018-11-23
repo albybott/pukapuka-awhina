@@ -1,15 +1,19 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import theme from '../../styles/theme'
 import { ThemeProvider } from 'styled-components'
 
-import Wrapper from './Wrapper'
+import LayoutWrapper from './LayoutWrapper'
 
+/**
+ * The main layout component that all pages are wrapped with
+ */
 class Layout extends React.Component {
   render(props) {
     return (
       <ThemeProvider theme={theme}>
-        <Wrapper location={this.props.location}>{this.props.children}</Wrapper>
+        <LayoutWrapper location={this.props.location}>
+          {this.props.children}
+        </LayoutWrapper>
       </ThemeProvider>
     )
   }

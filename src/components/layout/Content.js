@@ -2,16 +2,17 @@ import React from 'react'
 import { Box } from 'rebass'
 import styled from 'styled-components'
 
+/**
+ * This is the main content area component of the application
+ */
 const ContentWrapper = styled(Box)`
-  background-color: white;
-
-  position: fixed;
+  position: relative;
   top: ${props => props.theme.totalHeadHeight};
   height: 100vh;
   width: 100%;
-  z-index: 10;
-
+  z-index: 1;
   padding: 0 0 0 ${props => props.theme.sidebarWidth[3]};
+  background-color: white;
 
   ${props =>
     props.theme.media.laptop`padding: 0 0 0 ${props =>
@@ -24,7 +25,7 @@ const ContentWrapper = styled(Box)`
   ${props => props.theme.media.phone`padding: 0`};
 `
 
-const ConentContainer = styled(Box)`
+const ContentContainer = styled(Box)`
   max-width: 36.4rem;
   position: relative;
   margin: 0px auto;
@@ -38,7 +39,7 @@ const ConentContainer = styled(Box)`
 
 const Content = ({ children }) => (
   <ContentWrapper>
-    <ConentContainer>{children}</ConentContainer>
+    <ContentContainer>{children}</ContentContainer>
   </ContentWrapper>
 )
 

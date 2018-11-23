@@ -1,45 +1,41 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import { Box, Button, Image } from 'rebass'
+import { Box } from 'rebass'
 import styled from 'styled-components'
-import SubMenu from './SubMenu'
 
+import SideNav from './SideNav/SideNav'
+import { Divider } from 'rebass/dist/Divider'
+
+/**
+ * Page sidebar component which contains the side navigation bar
+ */
 const SidebarWrapper = styled(Box)`
-  background-color: ${props => props.theme.colors['purplebg']};
-  border-right: 1px solid ${props => props.theme.colors['lightpurple']};
-  font-family: ${props => props.theme.fonts.menu};
-
   top: ${props => props.theme.totalHeadHeight};
+  position: fixed;
+  z-index: 10;
   height: 100vh;
   width: ${props => props.theme.sidebarWidth[3]};
-  position: fixed;
-  z-index: 11;
+  background-color: ${props => props.theme.colors['purplebg']};
+  border-right: 1px solid ${props => props.theme.colors['lightpurple']};
 
   ${props =>
     props.theme.media.desktop`width: ${props => props.theme.sidebarWidth[3]}`};
+
   ${props =>
     props.theme.media.laptop`width: ${props => props.theme.sidebarWidth[2]}`};
+
   ${props =>
     props.theme.media.tablet`width: ${props => props.theme.sidebarWidth[1]}`};
 
   ${props => props.theme.media.phone`display: none;`};
 `
 
-const SidebarHeader = styled(Box)`
-  height: 3.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-`
-
 class Sidebar extends React.Component {
   pages = {
-    karakia: [
+    Karakia: [
       { title: 'Opening Prayer', path: '/karakia/opening-prayer' },
       { title: 'Closing Prayer', path: '/karakia/closing-prayer' },
     ],
-    waiata: [
+    Waiata: [
       { title: 'Waiata 1', path: '/karakia/opening-prayer' },
       { title: 'Waiata 2', path: '/karakia/closing-prayer' },
     ],
@@ -52,22 +48,20 @@ class Sidebar extends React.Component {
       activeSection = this.props.location.pathname.split('/')[1]
     }
 
-    console.log('currentSection: ' + activeSection.toLowerCase())
-
     return (
       <SidebarWrapper>
-        <Box>
-          <SubMenu
-            activeSection={activeSection}
-            sectionName="Karakia"
-            pages={this.pages.karakia}
-          />
-          <SubMenu
-            activeSection={activeSection}
-            sectionName="Waiata"
-            pages={this.pages.waiata}
-          />
-        </Box>
+        {Object.entries(this.pages).map(([key, value]) => {
+          console.log(`key is ${key} value is ${value}`)
+
+          return (
+            <SideNav
+              key={key}
+              activeSection={activeSection}
+              sectionName={key}
+              pages={value}
+            />
+          )
+        })}
       </SidebarWrapper>
     )
   }

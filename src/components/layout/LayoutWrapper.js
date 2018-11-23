@@ -2,11 +2,15 @@ import React from 'react'
 import GlobalStyle from '../../styles/global'
 
 import Banner from './Banner'
-import MainHeader from './MainHeader'
-import Sidebar from './Sidebar'
+import MainHeader from './Header/Header'
+import Sidebar from './Sidebar/Sidebar'
 import Content from './Content'
 
-class Wrapper extends React.Component {
+/**
+ * This component wraps all of the main page components and adds the global
+ * css style making it available to all components in the application
+ */
+class LayoutWrapper extends React.Component {
   render(props) {
     return (
       <>
@@ -20,4 +24,4 @@ class Wrapper extends React.Component {
   }
 }
 
-export default Wrapper
+export default LayoutWrapper

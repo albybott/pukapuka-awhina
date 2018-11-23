@@ -2,6 +2,9 @@ import React from 'react'
 import { Box, Link } from 'rebass'
 import styled from 'styled-components'
 
+/**
+ * The fixed page banner directly at the top of the page
+ */
 const BannerWrapper = styled(Box)`
   position: fixed;
   left: 0px;
@@ -9,9 +12,11 @@ const BannerWrapper = styled(Box)`
   width: 100%;
   padding: 0 0 0 0.5rem;
   overflow-x: auto;
+  z-index: 10;
 
   height: ${props => props.theme.bannerHeight};
   font-family: ${props => props.theme.fonts.header};
+  background-color: ${props => props.theme.colors['purple']};
 
   display: flex;
   flex-direction: column;
@@ -24,12 +29,13 @@ const BannerWrapper = styled(Box)`
   }
 `
 
+// white-space: nowrap prevents the banner text from wrapping when the screen width becomes too small
 const BannerText = styled(Box)`
   white-space: nowrap;
 `
 
 const Banner = props => (
-  <BannerWrapper bg="purple">
+  <BannerWrapper>
     <BannerText>{props.msg}</BannerText>
   </BannerWrapper>
 )

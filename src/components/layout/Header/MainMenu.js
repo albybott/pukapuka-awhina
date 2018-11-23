@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const MainMenuItems = styled.ul`
   ${props => props.theme.media.phone`display: none;`};
-  font-family: ${props => props.theme.fonts.header};
+
   display: flex;
   margin: 0;
   padding: 0 0 0 2rem;

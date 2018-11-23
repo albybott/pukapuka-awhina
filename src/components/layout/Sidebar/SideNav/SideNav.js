@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import SubMenuSection from './SubMenuSection'
+import SubMenuSection from './SideNavSection'
 
 const SubMenuItems = styled.ul`
   padding: 0;
