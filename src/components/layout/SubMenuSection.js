@@ -50,7 +50,7 @@ const SubMenuWrapper = styled(Box)`
 
 class Sidebar extends React.Component {
   state = {
-    active: false,
+    active: this.props.active,
   }
 
   handleSectionClick = () => {
@@ -66,9 +66,9 @@ class Sidebar extends React.Component {
           <SubMenuSectionItem>
             <Button onClick={() => this.handleSectionClick()}>
               {this.props.sectionName}
-              <SectionArrow active={this.props.active} src={Arrow} pr="1rem" />
+              <SectionArrow active={this.state.active} src={Arrow} pr="1rem" />
             </Button>
-            <SubMenuWrapper active={this.props.active}>
+            <SubMenuWrapper active={this.state.active}>
               {this.props.children}
             </SubMenuWrapper>
           </SubMenuSectionItem>
