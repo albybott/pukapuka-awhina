@@ -1,8 +1,7 @@
 import React from 'react'
-import Layout from '../components/layout/Layout'
+import Layout from '../../components/layout/Layout'
 import { Box } from 'rebass'
 import styled from 'styled-components'
-import { HELMET_PROPS } from 'react-helmet/lib/HelmetConstants'
 
 const PukapukaItem = styled(Box)`
   h1 {

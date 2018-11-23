@@ -1,8 +1,7 @@
 import React from 'react'
-import Layout from '../components/layout/Layout'
+import Layout from '../../components/layout/Layout'
 import { Box } from 'rebass'
 import styled from 'styled-components'
-import { HELMET_PROPS } from 'react-helmet/lib/HelmetConstants'
 
 const PukapukaItem = styled(Box)`
   h1 {
@@ -17,9 +16,9 @@ const PukapukaItem = styled(Box)`
 const IndexPage = props => (
   <Layout location={props.location}>
     <PukapukaItem>
-      <h1>OPENING PRAYER</h1>
+      <h1>CLOSING PRAYER</h1>
 
-      <p>E te Atua</p>
+      <p>E te Atua, e whakawhetai ana mātou</p>
       <p>Manaakitia mātou</p>
       <p>Arahina mai</p>
       <p>I ā mātou i roto i a mātou mahi </p>

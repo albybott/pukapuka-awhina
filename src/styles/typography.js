@@ -9,7 +9,7 @@ const typography = new Typography({
 
   // blockMarginBottom: 0, // Default margin bottom for all block elements
   includeNormalize: false, // Dont add normalize.css (added in the GlobalStyle)
-  baseFontSize: '16px',
+  baseFontSize: '18px',
   baseLineHeight: 1.666,
   headerFontFamily: theme.fonts.header,
   bodyFontFamily: theme.fonts.body,

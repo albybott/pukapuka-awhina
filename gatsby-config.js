@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Te Pukapuka Awhina',
+    title: 'He Pukapuka Awhina',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

@@ -6,15 +6,18 @@ import MainHeader from './MainHeader'
 import Sidebar from './Sidebar'
 import Content from './Content'
 
-
-const Wrapper = ({ children }) => (
-  <>
-    <Banner />
-    <MainHeader />
-    <Sidebar />
-    <Content>{children}</Content>
-    <GlobalStyle />
-  </>
-)
+class Wrapper extends React.Component {
+  render(props) {
+    return (
+      <>
+        <Banner msg="He Pukapuka Awhina mō ngā Whānau" />
+        <MainHeader />
+        <Sidebar location={this.props.location} />
+        <Content>{this.props.children}</Content>
+        <GlobalStyle />
+      </>
+    )
+  }
+}
 
 export default Wrapper

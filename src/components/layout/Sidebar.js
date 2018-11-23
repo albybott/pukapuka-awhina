@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Box } from 'rebass'
+import { Box, Button, Image } from 'rebass'
 import styled from 'styled-components'
+import SubMenu from './SubMenu'
 
 const SidebarWrapper = styled(Box)`
   background-color: ${props => props.theme.colors['purplebg']};
@@ -32,61 +33,44 @@ const SidebarHeader = styled(Box)`
   align-items: flex-end;
 `
 
-const SidebarContent = styled(Box)``
-
-const SubMenuItems = styled.ul`
-  padding: 0;
-`
-
-const SubMenuItem = styled.li`
-  padding: 0;
-  margin: 0;
-
-  font-weight: ${props => (props.active ? 'bold' : 'normal')};
-
-  color: ${props =>
-    props.active
-      ? props.theme.colors['purple']
-      : props.theme.colors['purplebg']};
-
-  :hover {
-    color: ${props => props.theme.colors['lightpurple']};
+class Sidebar extends React.Component {
+  pages = {
+    karakia: [
+      { title: 'Opening Prayer', path: '/karakia/opening-prayer' },
+      { title: 'Closing Prayer', path: '/karakia/closing-prayer' },
+    ],
+    waiata: [
+      { title: 'Waiata 1', path: '/karakia/opening-prayer' },
+      { title: 'Waiata 2', path: '/karakia/closing-prayer' },
+    ],
   }
-`
 
-const SubMenuLink = styled(Link)`
-  text-decoration: none;
-  font-size: 0.8em;
-  display: block;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid ${props => props.theme.colors['lightpurple']};
+  render(props) {
+    let activeSection = ''
 
-  color: ${props =>
-    props.active ? props.theme.colors['purple'] : props.theme.colors['text']};
+    if (this.props.location) {
+      activeSection = this.props.location.pathname.split('/')[1]
+    }
 
-  :hover {
-    color: ${props => props.theme.colors['purple']};
+    console.log('currentSection: ' + activeSection.toLowerCase())
+
+    return (
+      <SidebarWrapper>
+        <Box>
+          <SubMenu
+            activeSection={activeSection}
+            sectionName="Karakia"
+            pages={this.pages.karakia}
+          />
+          <SubMenu
+            activeSection={activeSection}
+            sectionName="Waiata"
+            pages={this.pages.waiata}
+          />
+        </Box>
+      </SidebarWrapper>
+    )
   }
-`
-
-const Sidebar = props => (
-  <SidebarWrapper>
-    <SidebarContent>
-      <SubMenuItems>
-        <SubMenuItem active>
-          <SubMenuLink to="http:/google.com" active>
-            Menu Item
-          </SubMenuLink>
-        </SubMenuItem>
-        <SubMenuItem>
-          <SubMenuLink to="/page-2">Page 2</SubMenuLink>
-        </SubMenuItem>
-        <SubMenuItem>
-          <SubMenuLink to="http:/google.com">Menu Item</SubMenuLink>
-        </SubMenuItem>
-      </SubMenuItems>
-    </SidebarContent>
-  </SidebarWrapper>
-)
+}
 
 export default Sidebar

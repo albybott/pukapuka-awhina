@@ -30,9 +30,7 @@ const BannerText = styled(Box)`
 
 const Banner = props => (
   <BannerWrapper bg="purple">
-    <BannerText>
-      Watch: “Rise of the Content Mesh: Webcast with Contentful and Gatsby”.
-    </BannerText>
+    <BannerText>{props.msg}</BannerText>
   </BannerWrapper>
 )
 

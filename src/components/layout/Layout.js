@@ -5,14 +5,14 @@ import { ThemeProvider } from 'styled-components'
 
 import Wrapper from './Wrapper'
 
-const Layout = ({ children }) => (
-  <ThemeProvider theme={theme}>
-    <Wrapper>{children}</Wrapper>
-  </ThemeProvider>
-)
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+class Layout extends React.Component {
+  render(props) {
+    return (
+      <ThemeProvider theme={theme}>
+        <Wrapper location={this.props.location}>{this.props.children}</Wrapper>
+      </ThemeProvider>
+    )
+  }
 }
 
 export default Layout
