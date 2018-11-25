@@ -1,4 +1,5 @@
 import React from 'react'
+import { navigate } from 'gatsby'
 import { Button, Image, Box } from 'rebass'
 import styled from 'styled-components'
 import Arrow from '../../../../images/arrow-icon.svg'
@@ -21,7 +22,6 @@ const SectionButton = styled(Button)`
 
   color: ${props => (props.active ? props.theme.colors['purple'] : 'inherit')};
 
-  font-family: inherit;
   font-size: 0.8em;
   font-weight: normal;
   border-bottom: 1px solid ${props => props.theme.colors['lightpurple']};
@@ -33,11 +33,13 @@ const SectionButton = styled(Button)`
   justify-content: space-between;
   align-items: center;
 
-  &:hover,
-  &:focus {
+  &:hover {
     cursor: pointer;
     color: ${props => props.theme.colors['purple']};
-    box-shadow: 1px 1px 1px 0 ${props => props.theme.colors['lightpurple']};
+  }
+
+  &:focus {
+    box-shadow: none;
   }
 `
 

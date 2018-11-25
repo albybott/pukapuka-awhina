@@ -5,11 +5,9 @@ import { Box, Image, Label } from 'rebass'
 import styled from 'styled-components'
 
 import Logo from '../../../images/gatsby-icon.svg'
-import Icon from '../../../images/search-icon.svg'
-// import { Label } from 'rebass/dist/Label'
+import SVGIcon from '../../SVGIcon'
 
-const Header = styled(Box)`
-  font-family: ${props => props.theme.fonts.header};
+const HeaderWrapper = styled(Box)`
   top: ${props => props.theme.bannerHeight};
   position: fixed;
   left: 0px;
@@ -41,11 +39,11 @@ const SearchInput = styled.input`
   outline: 0;
   border-radius: 2px;
   color: #8c65b3;
-  padding: 0 0 0 0.125rem;
+  padding: 0 0.125rem;
   overflow: hidden;
   width: 5rem;
   height: 100%;
-  font-size: 1rem;
+  font-size: 0.9rem;
 
   -webkit-transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -59,18 +57,19 @@ const SearchInput = styled.input`
   }
 `
 
-const SearchIcon = styled(Image)`
-  background-color: #f5f3f7;
-  padding: 0 0 0 0.2rem;
-  opacity: 0.75;
-  height: 100%;
-`
-
 const SearchLabel = styled(Label)`
   height: 1.5rem;
 `
 
-const MainHeader = props => (
+const SearchIcon = styled(SVGIcon)`
+  background-color: #f5f3f7;
+
+  path {
+    fill: #8c65b3;
+  }
+`
+
+const Header = props => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -92,20 +91,21 @@ const MainHeader = props => (
         >
           <html lang="en" />
         </Helmet>
-        <Header as="header">
+        <HeaderWrapper as="header">
           <Link to="/">
             <LogoImage src={Logo} />
           </Link>
+
           <SearchForm>
             <SearchLabel>
-              <SearchIcon src={Icon} />
+              <SearchIcon name="search" width={20} />
               <SearchInput id="search" placeholder="Search" type="text" />
             </SearchLabel>
           </SearchForm>
-        </Header>
+        </HeaderWrapper>
       </>
     )}
   />
 )
 
-export default MainHeader
+export default Header

@@ -53,8 +53,9 @@ const theme = {
     lightgray: '#f6f6ff',
   },
   space: [0, 4, 8, 16, 24, 32, 48, 56, 64, 128, 256],
-  bannerHeight: ['3rem'],
-  headerHeight: ['3rem'],
+  bannerHeight: '3rem',
+  headerHeight: '3rem',
+  footerHeight: 3,
   sidebarWidth: ['8rem', '10rem', '15rem', '18rem'],
   totalHeadHeight: '6rem',
   fonts: {

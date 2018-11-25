@@ -1,31 +1,31 @@
 import React from 'react'
 import Layout from '../../components/layout/Layout'
-import { Box } from 'rebass'
-import styled from 'styled-components'
+import PukapukaItem from '../../components/PuakapukaItem'
 
-const PukapukaItem = styled(Box)`
-  h1 {
-    color: black;
-  }
+const title = { maori: 'CLOSING PRAYER' }
 
-  p {
-    margin: 0.5rem 0;
-  }
-`
+const lines = [
+  { maori: 'E te Atua, e whakawhetai ana mātou', eng: 'Oh Creator, we thank' },
+  {
+    maori: 'ki koe mō āu manaakitanga katoa',
+    eng: 'you for all your kindness',
+  },
+  { maori: 'I tukua mai ki runga i a mātou', eng: 'That you bestowed upon us' },
+  {
+    maori: 'Ngā mea tika, ngā mea pono',
+    eng: 'righteousness and truthfulness',
+  },
+  {
+    maori: 'Otirā tōu arohā nui ki a mātou',
+    eng: 'also your unconditional love for us',
+  },
+  { maori: 'Korōria ki tōu ingoa tapu', eng: 'Glory to your holy name' },
+  { maori: 'Āmene', eng: 'Let it be so' },
+]
 
 const IndexPage = props => (
   <Layout location={props.location}>
-    <PukapukaItem>
-      <h1>CLOSING PRAYER</h1>
-
-      <p>E te Atua, e whakawhetai ana mātou</p>
-      <p>Manaakitia mātou</p>
-      <p>Arahina mai</p>
-      <p>I ā mātou i roto i a mātou mahi </p>
-      <p>Mō tēnei rā </p>
-      <p>Korōria ki tōu ingoa tapu</p>
-      <p>Āmene</p>
-    </PukapukaItem>
+    <PukapukaItem title={title} lines={lines} />
   </Layout>
 )
 

@@ -15,7 +15,6 @@ const BannerWrapper = styled(Box)`
   z-index: 10;
 
   height: ${props => props.theme.bannerHeight};
-  font-family: ${props => props.theme.fonts.header};
   background-color: ${props => props.theme.colors['purple']};
 
   display: flex;

@@ -3,7 +3,6 @@ import { Box } from 'rebass'
 import styled from 'styled-components'
 
 import SideNav from './SideNav/SideNav'
-import { Divider } from 'rebass/dist/Divider'
 
 /**
  * Page sidebar component which contains the side navigation bar
@@ -34,10 +33,15 @@ class Sidebar extends React.Component {
     Karakia: [
       { title: 'Opening Prayer', path: '/karakia/opening-prayer' },
       { title: 'Closing Prayer', path: '/karakia/closing-prayer' },
+      { title: 'Prayer For Kai', path: '/karakia/prayer-for-kai' },
+      {
+        title: 'Prayer For Blessing a House',
+        path: '/karakia/prayer-for-blessing-a-house',
+      },
     ],
-    Waiata: [
-      { title: 'Waiata 1', path: '/karakia/opening-prayer' },
-      { title: 'Waiata 2', path: '/karakia/closing-prayer' },
+    Waiata: [{ title: 'Waiata Himene', path: '/waiata/waiata-himene' }],
+    Whaikorero: [
+      { title: 'Tangata Whenua', path: '/whaikorero/tangata-whenua' },
     ],
   }
 

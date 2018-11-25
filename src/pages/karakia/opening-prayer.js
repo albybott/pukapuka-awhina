@@ -1,31 +1,22 @@
 import React from 'react'
 import Layout from '../../components/layout/Layout'
-import { Box } from 'rebass'
-import styled from 'styled-components'
+import PukapukaItem from '../../components/PuakapukaItem'
 
-const PukapukaItem = styled(Box)`
-  h1 {
-    color: black;
-  }
+const title = { maori: 'OPENING PRAYER' }
 
-  p {
-    margin: 0.5rem 0;
-  }
-`
+const lines = [
+  { maori: 'E te Atua', eng: 'Oh Creator of all things' },
+  { maori: 'Manaakitia mātou', eng: 'watch over us' },
+  { maori: 'Arahina mai', eng: 'guide and lead' },
+  { maori: 'I ā mātou i roto i a mātou mahi', eng: 'us in all our duties' },
+  { maori: 'Mō tēnei rā', eng: 'for today' },
+  { maori: 'Korōria ki tōu ingoa tapu', eng: 'Glory to your holy name' },
+  { maori: 'Āmene', eng: 'Let it be so' },
+]
 
 const IndexPage = props => (
   <Layout location={props.location}>
-    <PukapukaItem>
-      <h1>OPENING PRAYER</h1>
-
-      <p>E te Atua</p>
-      <p>Manaakitia mātou</p>
-      <p>Arahina mai</p>
-      <p>I ā mātou i roto i a mātou mahi </p>
-      <p>Mō tēnei rā </p>
-      <p>Korōria ki tōu ingoa tapu</p>
-      <p>Āmene</p>
-    </PukapukaItem>
+    <PukapukaItem title={title} lines={lines} />
   </Layout>
 )
 
