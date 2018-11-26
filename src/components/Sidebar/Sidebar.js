@@ -2,11 +2,8 @@ import React from 'react'
 import { Box } from 'rebass'
 import styled from 'styled-components'
 
-import SideNav from './SideNav'
+import Nav from './Nav'
 
-/**
- * Page sidebar component which contains the side navigation bar
- */
 const SidebarWrapper = styled(Box)`
   top: ${props => props.theme.totalHeadHeight};
   position: fixed;
@@ -28,45 +25,10 @@ const SidebarWrapper = styled(Box)`
   ${props => props.theme.media.phone`display: none;`};
 `
 
-class Sidebar extends React.Component {
-  pages = {
-    Karakia: [
-      { title: 'Opening Prayer', path: '/karakia/opening-prayer' },
-      { title: 'Closing Prayer', path: '/karakia/closing-prayer' },
-      { title: 'Prayer For Kai', path: '/karakia/prayer-for-kai' },
-      {
-        title: 'Prayer For Blessing a House',
-        path: '/karakia/prayer-for-blessing-a-house',
-      },
-    ],
-    Waiata: [{ title: 'Waiata Himene', path: '/waiata/waiata-himene' }],
-    Whaikorero: [
-      { title: 'Tangata Whenua', path: '/whaikorero/tangata-whenua' },
-    ],
-  }
-
-  render(props) {
-    let activeSection = ''
-
-    if (this.props.location) {
-      activeSection = this.props.location.pathname.split('/')[1]
-    }
-
-    return (
-      <SidebarWrapper>
-        {Object.entries(this.pages).map(([key, value]) => {
-          return (
-            <SideNav
-              key={key}
-              activeSection={activeSection}
-              sectionName={key}
-              pages={value}
-            />
-          )
-        })}
-      </SidebarWrapper>
-    )
-  }
-}
+const Sidebar = props => (
+  <SidebarWrapper>
+    <Nav />
+  </SidebarWrapper>
+)
 
 export default Sidebar
