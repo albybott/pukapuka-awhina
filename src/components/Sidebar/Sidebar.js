@@ -2,7 +2,7 @@ import React from 'react'
 import { Box } from 'rebass'
 import styled from 'styled-components'
 
-import SideNav from './SideNav/SideNav'
+import SideNav from './SideNav'
 
 /**
  * Page sidebar component which contains the side navigation bar

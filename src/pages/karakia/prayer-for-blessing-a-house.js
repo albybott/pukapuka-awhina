@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from '../../components/layout/Layout'
-import PukapukaItem from '../../components/PuakapukaItem'
+import Layout from '../../components/Layout/Layout'
+import PukapukaItem from '../../components/PukapukaItem/PuakapukaItem'
 
 const title = { maori: 'PRAYER FOR BLESSING A HOUSE' }
 

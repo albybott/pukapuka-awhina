@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import SubMenuSection from './SideNavSection'
+import SideNavSection from './SideNavSection'
 
 const SubMenuItems = styled.ul`
   padding: 0;
@@ -43,7 +43,7 @@ const SubMenuLink = styled(Link)`
 class SubMenu extends React.Component {
   render(props) {
     return (
-      <SubMenuSection
+      <SideNavSection
         sectionName={this.props.sectionName}
         active={
           this.props.activeSection === this.props.sectionName.toLowerCase()
@@ -58,7 +58,7 @@ class SubMenu extends React.Component {
             </SubMenuItem>
           ))}
         </SubMenuItems>
-      </SubMenuSection>
+      </SideNavSection>
     )
   }
 }

@@ -4,8 +4,8 @@ import Helmet from 'react-helmet'
 import { Box, Image, Label } from 'rebass'
 import styled from 'styled-components'
 
-import Logo from '../../../images/gatsby-icon.svg'
-import SVGIcon from '../../SVGIcon'
+import Logo from '../../images/gatsby-icon.svg'
+import SVGIcon from '../SVGIcon'
 
 const HeaderWrapper = styled(Box)`
   top: ${props => props.theme.bannerHeight};

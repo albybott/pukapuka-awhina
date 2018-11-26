@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Image, Box } from 'rebass'
 import styled from 'styled-components'
-import Arrow from '../../../../images/arrow-icon.svg'
+import Arrow from '../../images/arrow-icon.svg'
 
 const SubMenuSection = styled.ul`
   margin: 0;
@@ -19,7 +19,8 @@ const SectionButton = styled(Button)`
   text-align: right;
   background-color: inherit;
 
-  color: ${props => (props.active ? props.theme.colors['purple'] : 'inherit')};
+  color: ${props =>
+    props.selected ? props.theme.colors['purple'] : 'inherit'};
 
   font-size: 0.8em;
   font-weight: normal;
@@ -57,13 +58,16 @@ const SubMenuWrapper = styled(Box)`
 
 class Sidebar extends React.Component {
   state = {
-    active: this.props.active,
+    active: false,
   }
 
   handleSectionClick = () => {
     this.setState(prevState => ({
       active: !prevState.active,
     }))
+  }
+  componentWillMount() {
+    this.setState({ active: this.props.active })
   }
 
   render(props) {
@@ -73,7 +77,7 @@ class Sidebar extends React.Component {
           <SubMenuSectionItem>
             <SectionButton
               onClick={() => this.handleSectionClick()}
-              active={this.state.active}
+              selected={this.state.active}
             >
               {this.props.sectionName}
               <SectionArrow active={this.state.active} src={Arrow} />

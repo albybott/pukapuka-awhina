@@ -1,11 +1,11 @@
 import React from 'react'
 import GlobalStyle from '../../styles/global'
 
-import Banner from './Banner'
-import MainHeader from './Header/Header'
-import Sidebar from './Sidebar/Sidebar'
-import Content from './Content'
-import Footer from './Footer/Footer'
+import Banner from '../Banner'
+import MainHeader from '../Header/Header'
+import Sidebar from '../Sidebar/Sidebar'
+import Content from '../Content'
+import Footer from '../Footer/Footer'
 
 /**
  * This component wraps all of the main page components and adds the global
