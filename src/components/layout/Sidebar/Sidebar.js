@@ -55,8 +55,6 @@ class Sidebar extends React.Component {
     return (
       <SidebarWrapper>
         {Object.entries(this.pages).map(([key, value]) => {
-          console.log(`key is ${key} value is ${value}`)
-
           return (
             <SideNav
               key={key}

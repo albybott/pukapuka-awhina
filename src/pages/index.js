@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/layout/Layout'
-import { HELMET_PROPS } from 'react-helmet/lib/HelmetConstants'
 
 const IndexPage = props => (
   <Layout location={props.location}>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { navigate } from 'gatsby'
 import { Button, Image, Box } from 'rebass'
 import styled from 'styled-components'
 import Arrow from '../../../../images/arrow-icon.svg'
