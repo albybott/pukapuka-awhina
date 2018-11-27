@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { staticQuery, graphqL, StaticQuery } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 
 import NavGroup from './NavGroup'
 
@@ -47,7 +47,7 @@ const Nav = props => (
       let sitePages = {}
 
       // iterate over the data and prepare the site pages object
-      data.allSitePage.edges.map(edge => {
+      data.allSitePage.edges.forEach(edge => {
         const group = edge.node.fields.group
         const title = edge.node.fields.title
         const path = edge.node.path

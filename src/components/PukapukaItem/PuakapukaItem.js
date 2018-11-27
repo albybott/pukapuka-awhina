@@ -51,7 +51,7 @@ class PukapukaItem extends React.Component {
       <ItemWrapper>
         <ItemHeader
           title={this.props.heading.title}
-          transalation={this.props.heading.transalation}
+          translation={this.props.heading.translation}
           showENG={this.state.showENG}
         />
 

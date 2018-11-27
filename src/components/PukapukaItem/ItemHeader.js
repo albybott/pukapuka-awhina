@@ -17,7 +17,7 @@ const TitleTrans = styled.span`
 
 class Header extends React.Component {
   render({ title, translation, showENG } = this.props) {
-    // we only need to add the english header to the DOM if one is provided
+    // we only need to add the translation header to the DOM if one is provided
     let titleTranslation
     if (translation) {
       titleTranslation = (
