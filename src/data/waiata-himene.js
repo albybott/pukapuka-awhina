@@ -4,8 +4,8 @@
 
 module.exports = {
   items: [
+    /* Item Start */
     {
-      /* Item Start */
       heading: { title: 'He Honore' },
       group: 'Waiata Himene',
       youtube: 'https://www.youtube.com/watch?v=EIw73tvLrUI',
@@ -19,5 +19,20 @@ module.exports = {
         { maori: 'Te Atua, te piringa, tōku oranga' },
       ],
     },
+    /* Item Start */
+    {
+      heading: { title: 'Whakaaria Mai' },
+      group: 'Waiata Himene',
+      youtube: 'https://www.youtube.com/watch?v=9hxubCgwT-c&t=4s',
+      lines: [
+        { maori: 'Tō ripeka ki au' },
+        { maori: 'Tiaho mai' },
+        { maori: 'Rā roto i te po' },
+        { maori: 'Hei kōnā au' },
+        { maori: 'Titiro atu ai' },
+        { maori: 'Hei au koe noho ai' },
+      ],
+    },
+    /* Item Start */
   ],
 }
