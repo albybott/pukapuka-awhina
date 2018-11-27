@@ -1,5 +1,5 @@
 /**
- * Waiata pukapuka items
+ * Waiata Himene pukapuka items
  */
 
 module.exports = {
@@ -8,6 +8,7 @@ module.exports = {
       /* Item Start */
       heading: { title: 'He Honore' },
       group: 'Waiata Himene',
+      youtube: 'https://www.youtube.com/watch?v=EIw73tvLrUI',
       lines: [
         { maori: 'He Honore' },
         { maori: 'He korōria' },

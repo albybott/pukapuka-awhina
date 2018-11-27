@@ -1,9 +1,11 @@
+/**
+ * Whaikorero pukapuka items
+ */
+
 module.exports = {
   items: [
     {
-      /**
-       * Whaikorero
-       */
+      /* Item Start */
       heading: {
         title: 'He Mihi: Tangata Whenua',
         translation: 'A Speech as a Host',
@@ -51,6 +53,7 @@ module.exports = {
         },
       ],
     },
+    /* Item Start */
     {
       heading: {
         title: 'He Mihi: Manuhiri',
@@ -117,5 +120,56 @@ module.exports = {
         },
       ],
     },
+    /* Item Start */
+    {
+      heading: {
+        title: 'Pepeha',
+        translation: 'My tribal Saying',
+      },
+      group: 'Whaikorero',
+      lines: [
+        {
+          maori: 'Ko ______________________ te waka',
+          eng: '_____________ is the ancestral canoe',
+        },
+        {
+          maori: 'Ko ______________________ te maunga',
+          eng: '_____________ is the ancestral mountain',
+        },
+        {
+          maori: 'Ko ______________________ te awa',
+          eng: '_____________ is the river',
+        },
+        {
+          maori: 'Ko ______________________ te moana',
+          eng: '_____________ is the ocean',
+        },
+        {
+          maori: 'Ko ______________________ iwi',
+          eng: '_____________ is the tribe',
+        },
+        {
+          maori: 'Ko ______________________ hapu',
+          eng: '_____________ is the sub tribe',
+        },
+        {
+          maori: 'Ko ______________________ marae',
+          eng: '_____________ is the marae',
+        },
+        {
+          maori: 'Ko ______________________ tangata',
+          eng: '_____________ is the chief',
+        },
+        {
+          maori: 'Ko ______________________ te whānau',
+          eng: '_____________ is the family name',
+        },
+        {
+          maori: 'Ko ______________________ taku ingoa',
+          eng: '_____________ is my name',
+        },
+      ],
+    },
+    /* Item Start */
   ],
 }

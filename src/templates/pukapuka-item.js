@@ -4,6 +4,6 @@ import PukapukaItem from '../components/PukapukaItem/PuakapukaItem'
 
 export default ({ pageContext: { item } }) => (
   <Layout>
-    <PukapukaItem heading={item.heading} lines={item.lines} />
+    <PukapukaItem item={item} />
   </Layout>
 )

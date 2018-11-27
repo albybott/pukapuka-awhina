@@ -6,18 +6,27 @@
 
 const data = require('./src/data/data.js')
 
+/**
+ * remove invalid characters from a string so that is is valid for page path
+ * @param {string to convert} str
+ */
+const createPathString = str => {
+  return str
+    .toLowerCase()
+    .split(' ')
+    .join('-')
+    .replace(/[\[\]&\:]+/g, '')
+}
+
 exports.createPages = async ({ actions: { createPage } }) => {
   console.log('Creating Pukapuka Pages...')
-  console.log('data', data)
 
   data.items.forEach(item => {
-    item.slug = item.heading.title
-      .toLowerCase()
-      .split(' ')
-      .join('-')
+    item.slug = createPathString(item.heading.title)
+    item.root = createPathString(item.group)
 
     createPage({
-      path: `/${item.group.toLowerCase()}/${item.slug}/`,
+      path: `/${item.root}/${item.slug}/`,
       component: require.resolve('./src/templates/pukapuka-item.js'),
       context: { item },
     })
@@ -29,6 +38,8 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const { createNodeField } = actions
 
     if (node.context.hasOwnProperty('item')) {
+      console.log(`Creating Node fields for ${node.context.item.heading.title}`)
+
       createNodeField({
         node,
         name: `title`,
