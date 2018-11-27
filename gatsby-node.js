@@ -4,10 +4,11 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const data = require('./data.js')
+const data = require('./src/data/data.js')
 
 exports.createPages = async ({ actions: { createPage } }) => {
   console.log('Creating Pukapuka Pages...')
+  console.log('data', data)
 
   data.items.forEach(item => {
     item.slug = item.heading.title

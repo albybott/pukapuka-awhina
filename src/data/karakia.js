@@ -1,10 +1,12 @@
+/**
+ * Karakia pukapuka items
+ */
+
 module.exports = {
   items: [
     {
-      /**
-       * Karakia
-       */
-      heading: { title: 'OPENING PRAYER' },
+      /* Item Start */
+      heading: { title: 'Opening Prayer' },
       group: 'Karakia',
       lines: [
         { maori: 'E te Atua', eng: 'Oh Creator of all things' },
@@ -19,8 +21,9 @@ module.exports = {
         { maori: 'Āmene', eng: 'Let it be so' },
       ],
     },
+    /* Item Start */
     {
-      heading: { title: 'CLOSING PRAYER' },
+      heading: { title: 'Closing Prayer' },
       group: 'Karakia',
       lines: [
         {
@@ -47,8 +50,9 @@ module.exports = {
         { maori: 'Āmene', eng: 'Let it be so' },
       ],
     },
+    /* Item Start */
     {
-      heading: { title: 'PRAYER FOR BLESSING A HOUSE' },
+      heading: { title: 'Prayer For Blessing a House' },
       group: 'Karakia',
       lines: [
         { maori: 'E te Atua', eng: 'Oh Creator of all things' },
@@ -78,8 +82,10 @@ module.exports = {
         { maori: 'Āmene', eng: 'Let it be so' },
       ],
     },
+    /* Item Start */
+
     {
-      heading: { title: 'PRAYER FOR KAI' },
+      heading: { title: 'Prayer for Kai' },
       group: 'Karakia',
       lines: [
         { maori: 'E te Atua', eng: 'Oh Creator of all things' },
@@ -101,8 +107,10 @@ module.exports = {
         { maori: 'Āmene', eng: 'Let it be so' },
       ],
     },
+    /* Item Start */
+
     {
-      heading: { title: 'PRAYER FOR TAMAITI' },
+      heading: { title: 'Prayer for Tamaiti' },
       group: 'Karakia',
       lines: [
         {
@@ -130,136 +138,126 @@ module.exports = {
         { maori: 'Āmene', eng: 'Let it be so' },
       ],
     },
+    /* Item Start */
     {
-      /**
-       * Waiata
-       */
-      heading: { title: 'WAIATA HIMENE' },
-      group: 'Waiata',
+      heading: { title: 'Prayer for Tamariki' },
+      group: 'Karakia',
       lines: [
-        { maori: 'He korōria' },
-        { maori: 'Maunga rongo ki te whenua' },
-        { maori: 'Whakaaro pai e' },
-        { maori: 'Ki ngā tāngata katoa' },
-        { maori: 'Ake ake, ake ake, āmene' },
-        { maori: 'Te Atua, te piringa, tōku oranga' },
+        {
+          maori: 'E Atua tukua koa ōu ringa manaaki',
+          eng: 'Oh Creator lay your kind hands',
+        },
+        {
+          maori: 'ki runga i aku tamariki katoa',
+          eng: 'upon all my children',
+        },
+        {
+          maori: 'kia pai ai ā ratou moe, kia whakatā te tinana',
+          eng: 'so they may sleep, and rest the body',
+        },
+        {
+          maori: 'Hei āpōpō e te Atua',
+          eng: 'and tomorrow of Creator',
+        },
+        {
+          maori: 'Ka mauri oho, ka mauri tū,',
+          eng: 'the life force awakens and be upright',
+        },
+        { maori: 'ka mauri ora, ka mauri tau,', eng: 'be alive and content' },
+        { maori: 'Korōria ki tōu ingoa tapu	', eng: 'Glory to your holy name' },
+        { maori: 'Āmene', eng: 'Let it be so' },
       ],
     },
+    /* Item Start */
     {
-      /**
-       * Whaikorero
-       */
-      heading: {
-        title: 'HE MIHI: TANGATA WHENUA',
-        translation: 'A SPEECH AS A HOST',
-      },
-      group: 'Whaikorero',
+      heading: { title: 'Prayer for Kaumatua' },
+      group: 'Karakia',
       lines: [
         {
-          maori: 'Ka tangi te tītī, ka tangi te kākā',
-          eng: 'The tītī bird cries, the kākā bird cries',
-        },
-        { maori: 'Ka tangi hoki ko au	', eng: 'I speak out also' },
-        { maori: 'Tihei Mauri Ora', eng: 'I breath it is life' },
-        {
-          maori: 'Ko te mihi tuatahi, ki te Atua, tēnā koe',
-          eng: 'Firstly I acknowledge the Creator ',
+          maori: 'E te Atua, tukua mai koa tōu korowai arohā',
+          eng: 'Oh Creator, lay you mantle of compassion',
         },
         {
-          maori: 'Ko te mihi tuarua, ki a kīngi Tūheitia, Pai Mārire',
-          eng: 'Secondly I acknowledge King Tuheitia',
+          maori: 'Ki runga i ngā kuia, mē ngā koroua',
+          eng: 'upon the old people',
         },
         {
-          maori: 'Ko te mihi tuatoru, ki te hunga mate',
-          eng: 'Thirdly to those who have passed on',
-        },
-        { maori: 'Haere, haere, haere atu rā', eng: 'Go, go, farewell ' },
-        {
-          maori: 'Āpiti hono, tātai hono, rātou te hunga mate ki a rātou',
-          eng: 'The dead to the dead',
+          maori: 'Rātou katoa e kaumātua ana',
+          eng: 'All those who are our seniors',
         },
         {
-          maori: 'Āpiti hono, tātai hono, tātou te hunga ora ki a tātou',
-          eng: 'The living to the living',
+          maori: 'Kia piki te ora, kia piki te kaha,',
+          eng: 'to invigorate, to strengthen',
         },
         {
-          maori: 'E ngā mana, e ngā reo, e ngā karangaranga maha',
-          eng: 'Welcome to you my guests',
+          maori: 'Kia piki anō te māramatanga',
+          eng: 'and enhance the understanding',
         },
-        {
-          maori: 'Nau mai, haere mai, whakatau mai, nā reira,',
-          eng: 'Welcome here to this place',
-        },
-        {
-          maori: 'Tēnā koutou, tēnā koutou, tēnā koutou katoa.',
-          eng: 'I acknowledge you all',
-        },
+        { maori: 'Ki runga i a rātou katoa', eng: 'upon them all' },
+        { maori: 'Korōria ki tōu ingoa tapu	', eng: 'Glory to your holy name' },
+        { maori: 'Āmene', eng: 'Let it be so' },
       ],
     },
+    /* Item Start */
     {
-      heading: {
-        title: 'HE MIHI: MANUHIRI',
-        translation: 'A SPEECH AS A VISITOR',
-      },
-      group: 'Whaikorero',
+      heading: { title: 'Prayer for the Sick' },
+      group: 'Karakia',
       lines: [
         {
-          maori: 'He honore, he korōria ki te Atua	',
-          eng: 'Honour and glory to the Creator',
-        },
-        { maori: 'He maungarongo ki te whenua', eng: 'Peace on earth' },
-        {
-          maori: 'He whakaaro pai ki ngā tāngata katoa',
-          eng: 'Goodwill to all mankind',
+          maori: 'E te Atua, tukua mai koa tōu korowai arohā',
+          eng: 'Oh Creator, lay your mantle of caring',
         },
         {
-          maori: 'Tihei Mauri Ora,',
-          eng: 'I breath and it is life',
+          maori: 'ki runga i te hunga māuiui',
+          eng: 'upon those who are unwell',
         },
         {
-          maori: 'E te whare e tū nei, tēnā koe,',
-          eng: 'I acknowledge the house standing here',
+          maori: 'Rātou kei ngā hohipera, whare hauora',
+          eng: 'those in hospital, at the doctors',
         },
         {
-          maori: 'E te marae e hora nei, tēnā koe, tēnā korua,',
-          eng: 'I acknowledge the marae residence',
+          maori: 'whare tūroro, kei ngā kāinga anō hoki',
+          eng: 'Mental health facilities or at home',
         },
         {
-          maori: 'E tautoko ana au ngā mihi ki te kīngi Māori',
-          eng: 'I support the acknowledgement to the',
+          maori: 'Kia piki te ora, kia piki te kaha',
+          eng: 'Invigorate, strengthen',
         },
         {
-          maori: 'ki a Tūheitia, Pai Marire,',
-          eng: 'Maori King, Tuheitia',
+          maori: 'Kia piki anō te māramatanga',
+          eng: 'and enhance the understanding',
+        },
+        { maori: 'Ki runga i a rātou katoa', eng: 'upon them all' },
+        { maori: 'Korōria ki tōu ingoa tapu	', eng: 'Glory to your holy name' },
+        { maori: 'Āmene', eng: 'Let it be so' },
+      ],
+    },
+    /* Item Start */
+    {
+      heading: { title: 'Prayer When Travelling' },
+      group: 'Karakia',
+      lines: [
+        {
+          maori: 'E te Atua, tēnei ahau e īnoi nei ki a koe',
+          eng: 'Oh Creator, here I am praying to thee',
         },
         {
-          maori: 'Āpiti hono, tātai hono, tātou te hunga ora ki a tātou',
-          eng: 'The living to the living',
+          maori: 'Kia tiakina mai mātou i runga i ngā huarahi',
+          eng: 'to watch over us as we travel our journey',
         },
         {
-          maori: 'E ngā mate, haere, haere, haere atu rā',
-          eng: 'To those who have passed on, farewell',
+          maori: 'i tēnei ata/rā/pō, kia haere pai,',
+          eng: 'this morning/day/evening, that the journey is safe,',
         },
         {
-          maori: 'Haere ki te pō nui, te pō roa, te pō tangotango',
-          eng: 'return to the great, vast and endless night',
+          maori: 'kia tae pai ki te wāhi, e haere nei mātou',
+          eng: 'that we arrive safely to our destination',
         },
         {
-          maori: 'Āpiti hono, tātai hono, rātou te hunga mate ki a rātou',
-          eng: 'The dead to the dead',
+          maori: 'Tēnei ahau e whakakorōria ki tōu ingoa tapu',
+          eng: 'I acknowledge your holy name',
         },
-        {
-          maori: 'E te hau kāinga, karanga mai, karanga mai, mihi mai',
-          eng: 'to the host, welcome us your visitors',
-        },
-        {
-          maori: 'Kei te harikoa tōku ngākau kua tae mai mātou',
-          eng: 'My heart is pleased that we have arrived',
-        },
-        {
-          maori: 'Nā reira, tēnā koutou, tēnā koutou, tēnā koutou katoa',
-          eng: 'Therefore I acknowledge you all',
-        },
+        { maori: 'Āmene', eng: 'Let it be so' },
       ],
     },
   ],
