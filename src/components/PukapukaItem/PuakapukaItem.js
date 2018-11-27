@@ -50,8 +50,8 @@ class PukapukaItem extends React.Component {
     return (
       <ItemWrapper>
         <ItemHeader
-          maori={this.props.title.maori}
-          eng={this.props.title.eng}
+          title={this.props.heading.title}
+          transalation={this.props.heading.transalation}
           showENG={this.state.showENG}
         />
 

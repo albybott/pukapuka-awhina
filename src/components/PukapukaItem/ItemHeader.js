@@ -7,7 +7,7 @@ const MainHeader = styled.h2`
   padding: 0;
 `
 
-const MainHeaderENG = styled.span`
+const TitleTrans = styled.span`
   margin: 0;
   padding: 0 0 0.25rem 0;
   font-weight: normal;
@@ -16,17 +16,19 @@ const MainHeaderENG = styled.span`
 `
 
 class Header extends React.Component {
-  render({ maori, eng, showENG } = this.props) {
+  render({ title, translation, showENG } = this.props) {
     // we only need to add the english header to the DOM if one is provided
-    let mainHeaderENG
-    if (eng) {
-      mainHeaderENG = <MainHeaderENG showENG={showENG}>{eng}</MainHeaderENG>
+    let titleTranslation
+    if (translation) {
+      titleTranslation = (
+        <TitleTrans showENG={showENG}>{translation}</TitleTrans>
+      )
     }
 
     return (
       <MainHeader>
-        {maori}
-        {mainHeaderENG}
+        {title}
+        {titleTranslation}
       </MainHeader>
     )
   }

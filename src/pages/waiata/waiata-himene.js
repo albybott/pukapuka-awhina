@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/Layout/Layout'
 import PukapukaItem from '../../components/PukapukaItem/PuakapukaItem'
 
-const title = { maori: 'WAIATA HIMENE' }
+const heading = { title: 'WAIATA HIMENE' }
 
 const lines = [
   { maori: 'He korōria' },
@@ -15,7 +15,7 @@ const lines = [
 
 const IndexPage = props => (
   <Layout location={props.location}>
-    <PukapukaItem title={title} lines={lines} />
+    <PukapukaItem heading={heading} lines={lines} />
   </Layout>
 )
 
