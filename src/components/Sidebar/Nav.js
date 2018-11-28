@@ -21,6 +21,7 @@ const Nav = props => (
               fields {
                 title
                 group
+                root
               }
             }
           }
@@ -35,19 +36,29 @@ const Nav = props => (
       data.allSitePage.edges.forEach(edge => {
         const group = edge.node.fields.group
         const title = edge.node.fields.title
+        const root = edge.node.fields.root
         const path = edge.node.path
 
         if (!sitePages.hasOwnProperty(group)) {
-          sitePages[group] = []
+          sitePages[group] = { links: [], root: root }
         }
 
-        sitePages[group].push({ title, path })
+        sitePages[group].links.push({ title, path })
       })
 
       return (
         <NavGroupWrapper>
           {Object.entries(sitePages).map(([key, value]) => {
-            return <NavGroup key={key} title={key} links={value} />
+            return (
+              <NavGroup
+                key={key}
+                group={key}
+                title={key}
+                links={value.links}
+                location={props.location}
+                root={value.root}
+              />
+            )
           })}
         </NavGroupWrapper>
       )

@@ -20,9 +20,9 @@ const Trans = styled.span`
 
 const ItemContent = ({ lines, showENG }) => (
   <>
-    {lines.map(line => {
+    {lines.map((line, index) => {
       return (
-        <Line key={line.maori} showENG={showENG}>
+        <Line key={index} showENG={showENG}>
           {line.maori}
           <Trans showENG={showENG}>{line.eng}</Trans>
         </Line>

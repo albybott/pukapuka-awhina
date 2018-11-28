@@ -27,7 +27,7 @@ const SidebarWrapper = styled(Box)`
 
 const Sidebar = props => (
   <SidebarWrapper>
-    <Nav />
+    <Nav location={props.location} />
   </SidebarWrapper>
 )
 

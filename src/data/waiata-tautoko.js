@@ -123,24 +123,5 @@ module.exports = {
       ],
     },
     /* Item Start */
-    {
-      heading: { title: 'Whakataurangi' },
-      group: 'Waiata Tautoko',
-      youtube: 'https',
-      lines: [
-        { maori: 'taku' },
-        { maori: 'taku' },
-        { maori: 'taku' },
-        { maori: 'taku' },
-        { maori: 'taku' },
-        { maori: 'taku' },
-        { maori: 'taku' },
-        { maori: 'taku' },
-        { maori: 'taku' },
-        { maori: 'taku' },
-        { maori: 'taku' },
-      ],
-    },
-    /* Item Start */
   ],
 }

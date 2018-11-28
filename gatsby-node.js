@@ -51,6 +51,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         name: `group`,
         value: node.context.item.group,
       })
+
+      createNodeField({
+        node,
+        name: `root`,
+        value: node.context.item.root,
+      })
     }
   }
 }

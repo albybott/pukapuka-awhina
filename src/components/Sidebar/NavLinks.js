@@ -39,9 +39,9 @@ const NavLink = styled(Link)`
   }
 `
 
-const NavLinks = ({ links, active }) => {
+const NavLinks = ({ links, isActiveGroup }) => {
   let linkItems
-  if (active) {
+  if (isActiveGroup) {
     linkItems = links.map(link => (
       <NavLinkItem key={link.path}>
         <NavLink activeClassName="current" to={link.path}>

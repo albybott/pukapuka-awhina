@@ -1,5 +1,5 @@
 const karakia = require('./karakia.js')
-const waiataTautoko = require('./waiata-himene.js')
+const waiataTautoko = require('./waiata-tautoko.js')
 const waiataHimene = require('./waiata-himene.js')
 const whaikorero = require('./whaikorero.js')
 const karanga = require('./karanga.js')

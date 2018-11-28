@@ -12,24 +12,37 @@ const NavGroupItem = styled.li`
 
 class NavGroup extends React.Component {
   state = {
-    active: false,
+    isActiveGroup: false,
   }
 
   handleHeaderClick = () => {
     this.setState(prevState => ({
-      active: !prevState.active,
+      isActiveGroup: !prevState.isActiveGroup,
     }))
+  }
+
+  componentDidMount() {
+    const path = this.props.location.pathname
+    const root = this.props.root
+
+    if (path !== '/') {
+      const pathRoot = path.split('/')[1]
+
+      if (root === pathRoot) {
+        this.setState({ isActiveGroup: true })
+      }
+    }
   }
 
   render({ title, links } = this.props) {
     return (
       <NavGroupItem>
         <NavGroupHeader
-          active={this.state.active}
+          active={this.state.isActiveGroup}
           title={title}
           clickHandler={this.handleHeaderClick}
         />
-        <NavLinks links={links} active={this.state.active} />
+        <NavLinks links={links} isActiveGroup={this.state.isActiveGroup} />
       </NavGroupItem>
     )
   }
