@@ -21,6 +21,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
+
+  h1{
+    color: ${props => props.theme.colors['bannerTxt']}
+  }
 `
 
 export default GlobalStyle
