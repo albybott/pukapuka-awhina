@@ -35,63 +35,25 @@ const MediaThemedH1 = styled.h1`
 
 // Pass media template via theme object and Styled Components ThemeProvider
 const theme = {
-  main: '#663399', //purple
-  second: 'rgba(152, 193, 217, 1)',
-  third: 'rgba(224, 251, 252, 1)',
-  fourth: 'rgba(238, 108, 77, 1)',
-  fifth: 'rgba(41, 50, 65, 1)',
   media,
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   colors: {
-    purple: '#663399',
-    lightpurple: '#E0D6EB',
-    purplebg: '#FBFAFC',
-    secondary: '#ede7f3',
-    tertiary: '#fbfafc',
-    text: 'rgba(0, 0, 0, 0.88)',
+    main: '#1e1f26', // main color (banner)
+    second: '#aaaaaa', // (borders)
+    third: '#eeeeee', // background menu, footer - lighter than main
+    bannerBg: '#000',
+    bannerTxt: '#96a34a', // banner text
+    text: 'rgba(0, 0, 0, 0.88)', // default text color
   },
-  space: [0, 4, 8, 16, 24, 32, 48, 56, 64, 128, 256],
   bannerHeight: '3rem',
   headerHeight: '3rem',
   footerHeight: 3,
   sidebarWidth: ['8rem', '10rem', '15rem', '18rem'],
   totalHeadHeight: '6rem',
-  fonts: {
-    header: [
-      'Futura PT',
-      '-apple-system',
-      'BlinkMacSystemFont',
-      'Segoe UI',
-      'Roboto',
-      'Oxygen',
-      'Ubuntu',
-      'Cantarell',
-      'Fira Sans',
-      'Droid Sans',
-      'Helvetica Neue',
-      'Arial',
-      'sans-serif',
-    ],
-    body: ['Spectral', 'Georgia', 'Times New Roman', 'Times', 'serif'],
-    menu: [
-      '-apple-system',
-      'BlinkMacSystemFont',
-      'Segoe UI',
-      'Roboto',
-      'Oxygen',
-      'Ubuntu',
-      'Cantarell',
-      'Fira Sans',
-      'Droid Sans',
-      'Helvetica Neue',
-      'Arial',
-      'sans-serif',
-    ],
-  },
-  shadows: {
-    small: '0 0 4px rgba(0, 0, 0, .125)',
-    large: '0 0 24px rgba(0, 0, 0, .125)',
-  },
 }
 
 export default theme
+
+// Gatsby Color Scheme
+// main: '#663399', // main color (banner)
+// second: '#E0D6EB', // (borders, banner text)
+// third: '#FBFAFC', // background menu, footer - lighter than main

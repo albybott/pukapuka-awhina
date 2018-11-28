@@ -16,7 +16,7 @@ const HeaderWrapper = styled(Box)`
   width: 100%;
 
   height: ${props => props.theme.headerHeight};
-  border-bottom: 1px solid ${props => props.theme.colors['lightpurple']};
+  border-bottom: 1px solid ${props => props.theme.colors['second']};
   background-color: white;
 
   display: flex;

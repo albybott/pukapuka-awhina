@@ -12,7 +12,7 @@ const NavGroupHeaderButton = styled(Button)`
 
   font-size: 0.8em;
   font-weight: normal;
-  border-bottom: 1px solid ${props => props.theme.colors['lightpurple']};
+  border-bottom: 1px solid ${props => props.theme.colors['second']};
   width: 100%;
   text-align: left;
   text-transform: uppercase;

@@ -1,11 +1,13 @@
 import React from 'react'
-import { Box } from 'rebass'
+import { Flex, Box, Image } from 'rebass'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
+import Logo from '../images/nmo-logo-full.png'
 
 /**
  * The fixed page banner directly at the top of the page
  */
-const BannerWrapper = styled(Box)`
+const BannerWrapper = styled(Flex)`
   position: fixed;
   left: 0px;
   top: 0px;
@@ -15,16 +17,15 @@ const BannerWrapper = styled(Box)`
   z-index: 10;
 
   height: ${props => props.theme.bannerHeight};
-  background-color: ${props => props.theme.colors['main']};
+  background-color: ${props => props.theme.colors['bannerBg']};
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 
   div,
   a {
-    color: ${props => props.theme.colors['lightpurple']};
-    font-size: 0.9em;
+    color: ${props => props.theme.colors['bannerTxt']};
+    font-size: 1.3rem;
   }
 `
 

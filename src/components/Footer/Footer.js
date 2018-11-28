@@ -11,8 +11,8 @@ const FooterWrapper = styled(Box)`
   width: 100%;
 
   height: ${props => props.theme.footerHeight}rem;
-  border-top: 1px solid ${props => props.theme.colors['lightpurple']};
-  background-color: ${props => props.theme.colors['purplebg']};
+  border-top: 1px solid ${props => props.theme.colors['second']};
+  background-color: ${props => props.theme.colors['third']};
 
   display: flex;
   align-items: center;

@@ -10,8 +10,8 @@ const SidebarWrapper = styled(Box)`
   z-index: 10;
   height: 100vh;
   width: ${props => props.theme.sidebarWidth[3]};
-  background-color: ${props => props.theme.colors['purplebg']};
-  border-right: 1px solid ${props => props.theme.colors['lightpurple']};
+  background-color: ${props => props.theme.colors['third']};
+  border-right: 1px solid ${props => props.theme.colors['second']};
 
   ${props =>
     props.theme.media.desktop`width: ${props => props.theme.sidebarWidth[3]}`};

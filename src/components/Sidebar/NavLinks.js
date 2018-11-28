@@ -12,10 +12,10 @@ const NavLinkItem = styled.li`
   padding: 0 0 0 1rem;
   margin: 0;
 
-  color: ${props => props.theme.colors['purplebg']};
+  color: ${props => props.theme.colors['third']};
 
   :hover {
-    color: ${props => props.theme.colors['lightpurple']};
+    color: ${props => props.theme.colors['second']};
   }
 `
 
@@ -24,7 +24,7 @@ const NavLink = styled(Link)`
   font-size: 0.8em;
   display: block;
   padding: 0.5rem 0;
-  border-bottom: 1px solid ${props => props.theme.colors['lightpurple']};
+  border-bottom: 1px solid ${props => props.theme.colors['second']};
 
   color: ${props => props.theme.colors['text']};
 

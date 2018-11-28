@@ -15,7 +15,7 @@ class LayoutWrapper extends React.Component {
   render(props) {
     return (
       <>
-        <Banner msg="He Pukapuka Awhina mō ngā Whānau" />
+        <Banner msg="He Pukapuka Āwhina" />
         <MainHeader />
         <Sidebar location={this.props.location} />
         <Content>{this.props.children}</Content>

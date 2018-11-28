@@ -8,11 +8,11 @@ const TransButton = styled(Button)`
   display: 'block';
 
   background-color: ${props => props.theme.colors['main']};
-  border: 1px solid ${props => props.theme.colors['lightpurple']};
+  border: 1px solid ${props => props.theme.colors['second']};
   border-radius: 4px;
 
   &:hover {
-    background-color: ${props => props.theme.colors['purplebg']};
+    background-color: ${props => props.theme.colors['third']};
     color: ${props => props.theme.colors['main']};
   }
 
