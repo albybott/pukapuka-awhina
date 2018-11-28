@@ -3,6 +3,7 @@ const waiataTautoko = require('./waiata-himene.js')
 const waiataHimene = require('./waiata-himene.js')
 const whaikorero = require('./whaikorero.js')
 const karanga = require('./karanga.js')
+const whakatauki = require('./whakatauki.js')
 
 /**
  * import each of the pukapuka sections, concatenate them into a single array
@@ -14,6 +15,7 @@ module.exports = {
     waiataHimene.items,
     waiataTautoko.items,
     whaikorero.items,
-    karanga.items
+    karanga.items,
+    whakatauki.items
   ),
 }
