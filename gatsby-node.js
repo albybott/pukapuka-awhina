@@ -15,7 +15,7 @@ const createPathString = str => {
     .toLowerCase()
     .split(' ')
     .join('-')
-    .replace(/[\[\]&\:]+/g, '')
+    .replace(/[\(\)&\:]+/g, '')
 }
 
 exports.createPages = async ({ actions: { createPage } }) => {

@@ -7,7 +7,7 @@ module.exports = {
     /* Item Start */
     {
       heading: {
-        title: 'Kai Karanga',
+        title: 'Kai Karanga (Host)',
       },
       group: 'Karanga',
       lines: [
@@ -23,44 +23,42 @@ module.exports = {
     /* Item Start */
     {
       heading: {
-        title: 'Kai Karanga',
+        title: 'Kai Karanga (Visiting Reply)',
         translation: 'Visiting Karanga (Reply)',
       },
       group: 'Karanga',
-      lines: [{ maori: 'Karanga mai ra ki a matou', eng: 'Greet us' }],
       lines: [
+        { maori: 'Karanga mai ra ki a matou', eng: 'Greet us' },
         {
           maori: 'kua tae mai nei ki runga i te kaupapa',
           eng: 'who have arrived for the purpose',
         },
+        { maori: 'o te ra nei e', eng: 'of today' },
+        { maori: 'Karanga mai ra, karanga mai ra, ', eng: 'Greet us!' },
+        { maori: 'karanga mai ra…' },
       ],
-      lines: [{ maori: 'o te ra nei e', eng: 'of today' }],
-      lines: [{ maori: 'Karanga mai ra, karanga mai ra, ', eng: 'Greet us!' }],
-      lines: [{ maori: 'karanga mai ra…' }],
     },
     /* Item Start */
     {
       heading: {
-        title: 'Kai Karanga',
+        title: 'Kai Karanga (Host for those passed on)',
         translation: 'Host Karanga (for those passed on)',
       },
       group: 'Karanga',
-      lines: [{ maori: 'Haere mai ra koutou,', eng: 'Welcome to you all' }],
       lines: [
+        { maori: 'Haere mai ra koutou,', eng: 'Welcome to you all' },
         {
           maori: 'mauria mai o tatou tini mate e',
           eng: 'Bring those with you who have passed on',
         },
-      ],
-      lines: [
         { maori: 'Kia tangihia ki ratou e, ', eng: 'so we may weep for them' },
+        { maori: 'haere mai ra, haere mai ra e…', eng: 'Welcome!' },
       ],
-      lines: [{ maori: 'haere mai ra, haere mai ra e…', eng: 'Welcome!' }],
     },
     /* Item Start */
     {
       heading: {
-        title: 'Kai Whakaatu',
+        title: 'Kai Whakaatu (Visiting for those passed on)',
         translation: 'Visiting Karanga (For those passed on)',
       },
       group: 'Karanga',
@@ -69,17 +67,14 @@ module.exports = {
           maori: 'Karanga atu ra ki o tatou aitua',
           eng: 'Farewell to our loved ones',
         },
+        { maori: 'Haere atu ra koutou,', eng: 'Farewell!' },
+        { maori: 'Haere atu ra koutou e…' },
       ],
-      lines: [
-        { maori: 'Kua wehe atu ki te po e', eng: 'who have left to return' },
-      ],
-      lines: [{ maori: 'Haere atu ra koutou,', eng: 'Farewell!' }],
-      lines: [{ maori: 'Haere atu ra koutou e…' }],
     },
     /* Item Start */
     {
       heading: {
-        title: 'Kai Karanga',
+        title: 'Kai Karanga (Host Indicating to be seated)',
         translation: 'Host Karanga (Indicating to be seated)',
       },
       group: 'Karanga',
@@ -88,15 +83,11 @@ module.exports = {
           maori: 'Whakatau mai ra koutou e',
           eng: 'To you (who have arrived) settle here ',
         },
-      ],
-      lines: [{ maori: 'Whakatau mai ra ', eng: 'Arrive here' }],
-      lines: [
+        { maori: 'Whakatau mai ra ', eng: 'Arrive here' },
         {
           maori: 'ki runga i te kaupapa o te ra nei e',
           eng: 'for the purpose of the day',
         },
-      ],
-      lines: [
         {
           maori: 'Whakatau mai ra, whakatau mai ra e…',
           eng: 'Reach this destination',
