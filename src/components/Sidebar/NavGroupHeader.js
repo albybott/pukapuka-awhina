@@ -23,7 +23,7 @@ const NavGroupHeaderButton = styled(Button)`
 
   &:hover {
     cursor: pointer;
-    color: ${props => props.theme.colors['purple']};
+    color: ${props => props.theme.colors['main']};
   }
 
   &:focus {
@@ -31,7 +31,7 @@ const NavGroupHeaderButton = styled(Button)`
   }
 
   &.current {
-    color: ${props => props.theme.colors['purple']};
+    color: ${props => props.theme.colors['main']};
   }
 `
 

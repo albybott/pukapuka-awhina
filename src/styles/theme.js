@@ -35,7 +35,7 @@ const MediaThemedH1 = styled.h1`
 
 // Pass media template via theme object and Styled Components ThemeProvider
 const theme = {
-  main: 'rgba(61, 90, 128, 1)',
+  main: '#663399', //purple
   second: 'rgba(152, 193, 217, 1)',
   third: 'rgba(224, 251, 252, 1)',
   fourth: 'rgba(238, 108, 77, 1)',
@@ -49,8 +49,6 @@ const theme = {
     secondary: '#ede7f3',
     tertiary: '#fbfafc',
     text: 'rgba(0, 0, 0, 0.88)',
-    blue: '#07c',
-    lightgray: '#f6f6ff',
   },
   space: [0, 4, 8, 16, 24, 32, 48, 56, 64, 128, 256],
   bannerHeight: '3rem',

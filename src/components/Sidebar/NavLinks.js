@@ -31,7 +31,7 @@ const NavLink = styled(Link)`
   &:hover,
   &:active,
   &.current {
-    color: ${props => props.theme.colors['purple']};
+    color: ${props => props.theme.colors['main']};
   }
 
   &.current {

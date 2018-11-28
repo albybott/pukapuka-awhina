@@ -15,7 +15,7 @@ const BannerWrapper = styled(Box)`
   z-index: 10;
 
   height: ${props => props.theme.bannerHeight};
-  background-color: ${props => props.theme.colors['purple']};
+  background-color: ${props => props.theme.colors['main']};
 
   display: flex;
   flex-direction: column;

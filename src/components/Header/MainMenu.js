@@ -32,12 +32,12 @@ const MainMenuLink = styled(Link)`
 
   &:hover,
   &:active {
-    color: ${props => props.theme.colors['purple']};
+    color: ${props => props.theme.colors['main']};
   }
 
   &.active {
-    border-bottom: 0.2rem solid ${props => props.theme.colors['purple']};
-    color: ${props => props.theme.colors['purple']};
+    border-bottom: 0.2rem solid ${props => props.theme.colors['main']};
+    color: ${props => props.theme.colors['main']};
   }
 `
 

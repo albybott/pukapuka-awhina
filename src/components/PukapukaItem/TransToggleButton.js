@@ -7,13 +7,13 @@ const TransButton = styled(Button)`
   align-self: center;
   display: 'block';
 
-  background-color: ${props => props.theme.colors['purple']};
+  background-color: ${props => props.theme.colors['main']};
   border: 1px solid ${props => props.theme.colors['lightpurple']};
   border-radius: 4px;
 
   &:hover {
     background-color: ${props => props.theme.colors['purplebg']};
-    color: ${props => props.theme.colors['purple']};
+    color: ${props => props.theme.colors['main']};
   }
 
   &:focus {
