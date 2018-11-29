@@ -1,12 +1,14 @@
 import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import Helmet from 'react-helmet'
-import { Box, Label } from 'rebass'
+import { Flex, Label, Image } from 'rebass'
 import styled from 'styled-components'
 
 import SVGIcon from '../SVGIcon'
+// import Whare from '../../images/whare-icon.svg'
+import Whare from '../Icons/Whare'
 
-const HeaderWrapper = styled(Box)`
+const HeaderWrapper = styled(Flex)`
   top: ${props => props.theme.bannerHeight};
   position: fixed;
   left: 0px;
@@ -18,7 +20,6 @@ const HeaderWrapper = styled(Box)`
   border-bottom: 1px solid ${props => props.theme.colors['second']};
   background-color: white;
 
-  display: flex;
   align-items: center;
   justify-content: space-between;
 `
@@ -59,13 +60,42 @@ const SearchIcon = styled(SVGIcon)`
   background-color: ${props => props.theme.colors['third']};
 
   path {
-    fill: ${props => props.theme.colors['text']};
+    fill: ${props => props.theme.colors['main']};
   }
 `
 
-const HeaderMSG = styled.h5`
-  padding: 0;
-  margin: 0;
+const HeaderLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  color: ${props => props.theme.colors['text']};
+
+  h5 {
+    padding: 0 0 0 0.25rem;
+    margin: 0;
+  }
+
+  img {
+    height: 1.8rem;
+
+    svg path {
+      fill {
+        color: red;
+      }
+    }
+  }
+
+  :hover {
+    color: ${props => props.theme.colors['bannerTxt']};
+    text-decoration: none;
+  }
+`
+
+const WhareIcon = styled(Whare)`
+  fill: ${props => props.theme.colors['text']};
+
+  :hover {
+    fill: ${props => props.theme.colors['fourth']};
+  }
 `
 
 const Header = props => (
@@ -91,7 +121,12 @@ const Header = props => (
           <html lang="en" />
         </Helmet>
         <HeaderWrapper as="header">
-          <HeaderMSG>He Pukapuka Awhina mō ngā Whānau</HeaderMSG>
+          <HeaderLink to="/">
+            {/* <WhareIcon width="3rem" /> */}
+            {/* <Heading as="h5" className="headlink__heading" p={0} m={0}>
+              He Pukapuka Awhina mō ngā Whānau
+            </Heading> */}
+          </HeaderLink>
           <SearchForm>
             <SearchLabel>
               <SearchIcon name="search" width={20} />

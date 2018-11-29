@@ -8,9 +8,7 @@ import TransToggleButton from './TransToggleButton'
 import ItemContent from './ItemContent'
 
 const ItemWrapper = styled(Box)`
-  /* p:first-of-type {
-    margin-top: ${props => (props.showButtons ? '0 !important' : '1rem')};
-  } */
+  position: relative;
 `
 
 const ButtonWrapper = styled(Flex)`
@@ -77,13 +75,14 @@ class PukapukaItem extends React.Component {
 
     return (
       <ItemWrapper>
+        {transToggleButton}
         <ItemHeader
           title={this.props.item.heading.title}
           translation={this.props.item.heading.translation}
           showENG={this.state.showENG}
         />
 
-        <ButtonWrapper>{transToggleButton}</ButtonWrapper>
+        <ButtonWrapper />
 
         <ItemContent
           lines={this.props.item.lines}

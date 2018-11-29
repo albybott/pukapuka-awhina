@@ -1,8 +1,6 @@
 import React from 'react'
-import { Flex, Box, Image } from 'rebass'
+import { Flex, Box } from 'rebass'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
-import Logo from '../images/nmo-logo-full.png'
 
 /**
  * The fixed page banner directly at the top of the page

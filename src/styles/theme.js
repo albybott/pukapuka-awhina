@@ -8,7 +8,7 @@ const sizes = {
   desktop: 80,
   laptop: 64,
   tablet: 48,
-  phone: 32,
+  phone: 40,
 }
 
 // Iterate through the sizes and create a media template
@@ -40,15 +40,16 @@ const theme = {
     main: '#1e1f26', // main color (banner)
     second: '#aaaaaa', // (borders)
     third: '#eeeeee', // background menu, footer - lighter than main
+    fourth: '#878787', // background - slightly darker
     bannerBg: '#000',
     bannerTxt: '#96a34a', // banner text
     text: 'rgba(0, 0, 0, 0.88)', // default text color
   },
-  bannerHeight: '3rem',
+  bannerHeight: '3.5rem',
   headerHeight: '3rem',
   footerHeight: 3,
-  sidebarWidth: ['8rem', '10rem', '15rem', '18rem'],
-  totalHeadHeight: '6rem',
+  sidebarWidth: ['14rem', '16rem', '18rem', '18rem'],
+  totalHeadHeight: '6.5rem',
 }
 
 export default theme

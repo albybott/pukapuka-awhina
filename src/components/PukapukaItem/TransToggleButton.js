@@ -1,11 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button } from 'rebass'
+import { Button, Box } from 'rebass'
+
+const TransButtonWrapper = styled(Box)`
+  position: absolute;
+  top: -0.25rem;
+  right: 3rem;
+
+  ${props => props.theme.media.phone`top: -0.4rem`};
+`
 
 const TransButton = styled(Button)`
   padding: 0.3rem;
-  align-self: center;
   display: 'block';
+  position: fixed;
 
   background-color: ${props => props.theme.colors['main']};
   border: 1px solid ${props => props.theme.colors['second']};
@@ -22,9 +30,11 @@ const TransButton = styled(Button)`
 `
 
 const TransToggleButton = props => (
-  <TransButton onClick={props.toggleTrans}>
-    {props.showENG ? 'Hide English' : 'Show English'}
-  </TransButton>
+  <TransButtonWrapper>
+    <TransButton onClick={props.toggleTrans}>
+      {props.showENG ? 'Maori' : 'English'}
+    </TransButton>
+  </TransButtonWrapper>
 )
 
 export default TransToggleButton

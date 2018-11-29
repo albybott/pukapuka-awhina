@@ -16,6 +16,8 @@ class NavGroup extends React.Component {
   }
 
   handleHeaderClick = () => {
+    this.props.resetGroups()
+
     this.setState(prevState => ({
       isActiveGroup: !prevState.isActiveGroup,
     }))
@@ -25,11 +27,16 @@ class NavGroup extends React.Component {
     const path = this.props.location.pathname
     const root = this.props.root
 
+    // if the current root path matches the group root (i.e. karakia group and root is /karakia/)
+    // then update the state and make this group active
     if (path !== '/') {
+      // the root path will be at index 1 once path is converted to array
       const pathRoot = path.split('/')[1]
 
       if (root === pathRoot) {
         this.setState({ isActiveGroup: true })
+      } else {
+        this.setState({ isActiveGroup: false })
       }
     }
   }

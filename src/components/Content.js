@@ -27,7 +27,7 @@ const ContentWrapper = styled(Box)`
 
 const ContentContainer = styled(Box)`
   max-width: 36.4rem;
-  position: relative;
+  /* position: relative; */
   margin: 0px auto;
   padding: 2rem 2rem ${props => props.theme.footerHeight + 2}rem 2rem;
 
