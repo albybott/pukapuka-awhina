@@ -53,8 +53,3 @@ const theme = {
 }
 
 export default theme
-
-// Gatsby Color Scheme
-// main: '#663399', // main color (banner)
-// second: '#E0D6EB', // (borders, banner text)
-// third: '#FBFAFC', // background menu, footer - lighter than main

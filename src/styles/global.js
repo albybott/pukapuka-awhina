@@ -9,12 +9,12 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 
     /* use typography.scale to adjust fonts by veiwport size */
-    ${{ ...scale(6 / 16) }}
+    ${{ ...scale(7 / 16) }}
 
-    ${props => props.theme.media.desktop`${{ ...scale(6 / 16) }}`};
-    ${props => props.theme.media.laptop`${{ ...scale(4 / 16) }}`};
-    ${props => props.theme.media.tablet`${{ ...scale(2 / 16) }}`};
-    ${props => props.theme.media.phone`${{ ...scale(1 / 16) }}`};
+    ${props => props.theme.media.desktop`${{ ...scale(7 / 16) }}`};
+    ${props => props.theme.media.laptop`${{ ...scale(5 / 16) }}`};
+    ${props => props.theme.media.tablet`${{ ...scale(3 / 16) }}`};
+    ${props => props.theme.media.phone`${{ ...scale(2 / 16) }}`};
   }
 
   img {

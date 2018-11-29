@@ -18,11 +18,7 @@ const ContentWrapper = styled(Box)`
     props.theme.media.laptop`padding: 0 0 0 ${props =>
       props.theme.sidebarWidth[2]}`};
 
-  ${props =>
-    props.theme.media.tablet`padding: 0 0 0 ${props =>
-      props.theme.sidebarWidth[1]}`};
-
-  ${props => props.theme.media.phone`padding: 0`};
+  ${props => props.theme.media.laptop`padding: 0 `};
 `
 
 const ContentContainer = styled(Box)`

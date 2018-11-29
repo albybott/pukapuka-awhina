@@ -20,17 +20,11 @@ const SidebarWrapper = styled(Box)`
     props.theme.media.desktop`width: ${props => props.theme.sidebarWidth[3]}`};
 
   ${props =>
-    props.theme.media.laptop`width: ${props => props.theme.sidebarWidth[2]}`};
-
-  ${props =>
-    props.theme.media.tablet`width: ${props => props.theme.sidebarWidth[1]}`};
-
-  ${props =>
-    props.theme.media.phone`${
+    props.theme.media.laptop`${
       props.showMobileNav ? 'display: block' : 'display: none'
     };
     top: 0;
-  z-index: 11;`};
+  z-index: 11; padding-top: 2rem;`};
 `
 
 const Sidebar = props => (

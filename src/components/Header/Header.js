@@ -1,12 +1,11 @@
 import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import Helmet from 'react-helmet'
-import { Flex, Label, Image } from 'rebass'
+import { Flex, Label } from 'rebass'
 import styled from 'styled-components'
 
-import SVGIcon from '../SVGIcon'
-// import Whare from '../../images/whare-icon.svg'
-import Whare from '../Icons/Whare'
+import Home from '../Icons/Home'
+import Search from '../Icons/Search'
 
 const HeaderWrapper = styled(Flex)`
   top: ${props => props.theme.bannerHeight};
@@ -39,7 +38,7 @@ const SearchInput = styled.input`
   overflow: hidden;
   width: 5rem;
   height: 100%;
-  font-size: 0.9rem;
+  font-size: 1rem;
 
   -webkit-transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -53,14 +52,14 @@ const SearchInput = styled.input`
 `
 
 const SearchLabel = styled(Label)`
-  height: 1.5rem;
+  height: 2.2rem;
 `
 
-const SearchIcon = styled(SVGIcon)`
+const SearchIcon = styled(Search)`
   background-color: ${props => props.theme.colors['third']};
 
   path {
-    fill: ${props => props.theme.colors['main']};
+    fill: ${props => props.theme.colors['second']};
   }
 `
 
@@ -68,33 +67,13 @@ const HeaderLink = styled(Link)`
   display: flex;
   align-items: center;
   color: ${props => props.theme.colors['text']};
-
-  h5 {
-    padding: 0 0 0 0.25rem;
-    margin: 0;
-  }
-
-  img {
-    height: 1.8rem;
-
-    svg path {
-      fill {
-        color: red;
-      }
-    }
-  }
-
-  :hover {
-    color: ${props => props.theme.colors['bannerTxt']};
-    text-decoration: none;
-  }
 `
 
-const WhareIcon = styled(Whare)`
+const HomeIcon = styled(Home)`
   fill: ${props => props.theme.colors['text']};
 
   :hover {
-    fill: ${props => props.theme.colors['fourth']};
+    fill: ${props => props.theme.colors['bannerTxt']};
   }
 `
 
@@ -122,14 +101,11 @@ const Header = props => (
         </Helmet>
         <HeaderWrapper as="header">
           <HeaderLink to="/">
-            {/* <WhareIcon width="3rem" /> */}
-            {/* <Heading as="h5" className="headlink__heading" p={0} m={0}>
-              He Pukapuka Awhina mō ngā Whānau
-            </Heading> */}
+            <HomeIcon width="2.5rem" />
           </HeaderLink>
           <SearchForm>
             <SearchLabel>
-              <SearchIcon name="search" width={20} />
+              <SearchIcon name="search" width="1.4rem" />
               <SearchInput id="search" placeholder="Search" type="text" />
             </SearchLabel>
           </SearchForm>

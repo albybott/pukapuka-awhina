@@ -44,28 +44,8 @@ const MainMenuLink = styled(Link)`
 const MainMenu = props => (
   <MainMenuItems>
     <MainMenuItem>
-      <MainMenuLink activeClassName="active" to="/karakia/">
-        Karakia
-      </MainMenuLink>
-    </MainMenuItem>
-    <MainMenuItem>
-      <MainMenuLink activeClassName="active" to="/whaikorero/">
-        Whaikorero
-      </MainMenuLink>
-    </MainMenuItem>
-    <MainMenuItem>
-      <MainMenuLink activeClassName="active" to="/karanga/">
-        Karanga
-      </MainMenuLink>
-    </MainMenuItem>
-    <MainMenuItem>
-      <MainMenuLink activeClassName="active" to="/waiata/">
-        Waiata
-      </MainMenuLink>
-    </MainMenuItem>
-    <MainMenuItem>
-      <MainMenuLink activeClassName="active" to="/whakatauki/">
-        Whakatauki
+      <MainMenuLink activeClassName="active" to="/">
+        Home
       </MainMenuLink>
     </MainMenuItem>
   </MainMenuItems>

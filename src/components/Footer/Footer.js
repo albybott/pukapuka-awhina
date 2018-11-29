@@ -11,15 +11,16 @@ const FooterWrapper = styled(Box)`
   z-index: 10;
   padding: 0;
   width: 100%;
-
-  height: 7rem;
   border-top: 1px solid ${props => props.theme.colors['second']};
   background-color: #000;
+
+  height: 7rem;
+  ${props => props.theme.media.laptop`height: 6rem;`};
 `
 
 const LogoWrapper = styled(Box)`
   padding: 1rem 0;
-  height: 5rem;
+  height: 72%;
 `
 
 const LogoImage = styled(Image)`

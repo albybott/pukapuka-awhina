@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
-import MainHeader from '../components/MainHeader'
+import MainHeading from '../components/MainHeading'
 
 const IndexPage = props => (
   <Layout location={props.location}>
-    <MainHeader>He Pukapuka Awhina</MainHeader>
+    <MainHeading>He Pukapuka Awhina</MainHeading>
     <p>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the

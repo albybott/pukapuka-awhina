@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import MainHeader from '../MainHeader'
+import MainHeading from '../MainHeading'
 
 const TitleTrans = styled.span`
   margin: 0;
@@ -21,10 +21,10 @@ class Header extends React.Component {
     }
 
     return (
-      <MainHeader>
+      <MainHeading>
         {title}
         {titleTranslation}
-      </MainHeader>
+      </MainHeading>
     )
   }
 }

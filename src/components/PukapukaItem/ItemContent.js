@@ -13,7 +13,7 @@ const Trans = styled.span`
     Courier New, monospace;
 
   background: #fdfaf6;
-  font-size: 0.8em;
+  font-size: 0.9em;
   padding: 0.4rem 0;
   margin: 0;
 `

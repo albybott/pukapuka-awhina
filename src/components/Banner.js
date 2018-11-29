@@ -23,7 +23,8 @@ const BannerWrapper = styled(Flex)`
   div,
   a {
     color: ${props => props.theme.colors['bannerTxt']};
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 `
 
