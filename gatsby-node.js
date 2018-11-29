@@ -22,7 +22,11 @@ exports.createPages = async ({ actions: { createPage } }) => {
   console.log('Creating Pukapuka Pages...')
 
   data.items.forEach(item => {
-    item.slug = createPathString(item.heading.title)
+    const webSafeTitle = item.heading.hasOwnProperty('friendly')
+      ? item.heading.friendly
+      : item.heading.title
+
+    item.slug = createPathString(webSafeTitle)
     item.root = createPathString(item.group)
 
     createPage({

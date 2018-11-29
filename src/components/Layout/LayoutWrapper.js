@@ -3,7 +3,7 @@ import GlobalStyle from '../../styles/global'
 import styled from 'styled-components'
 
 import Banner from '../Banner'
-import MainHeader from '../Header/Header'
+import Header from '../Header/Header'
 import Sidebar from '../Sidebar/Sidebar'
 import MenuToggleButton from './menuToggleButton'
 import Content from '../Content'
@@ -17,12 +17,23 @@ const LayoutWrapper = styled.div`
  * This component wraps all of the main page components and adds the global
  * css style making it available to all components in the application
  */
-export default ({ location, children, showMobileNav, toggleSidebarClick }) => (
+export default ({
+  location,
+  children,
+  showMobileNav,
+  toggleSidebarClick,
+  toggleHasENG,
+  toggleShowENG,
+  hasENG,
+  showENG,
+}) => (
   <LayoutWrapper>
     <Banner msg="He Pukapuka Āwhina" />
-    <MainHeader />
+    <Header hasENG={hasENG} showENG={showENG} toggleShowENG={toggleShowENG} />
     <Sidebar location={location} showMobileNav={showMobileNav} />
-    <Content>{children}</Content>
+    <Content toggleHasENG={toggleHasENG} showENG={showENG}>
+      {children}
+    </Content>
     <Footer />
     <MenuToggleButton toggleSidebarClick={toggleSidebarClick} />
     <GlobalStyle />

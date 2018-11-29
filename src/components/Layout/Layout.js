@@ -10,6 +10,12 @@ import LayoutWrapper from './LayoutWrapper'
 class Layout extends React.Component {
   state = {
     showMobileNav: false,
+    showENG: false,
+    hasENG: false,
+  }
+
+  handleToggleEnglishTrans = hasENG => {
+    this.setState({ hasENG })
   }
 
   handleToggleSidebar = () => {
@@ -18,15 +24,25 @@ class Layout extends React.Component {
     }))
   }
 
-  render(props) {
+  handleToggleTransClick = () => {
+    this.setState(prevState => ({
+      showENG: !prevState.showENG,
+    }))
+  }
+
+  render({ location, children } = this.props) {
     return (
       <ThemeProvider theme={theme}>
         <LayoutWrapper
-          location={this.props.location}
+          location={location}
           showMobileNav={this.state.showMobileNav}
           toggleSidebarClick={this.handleToggleSidebar}
+          toggleHasENG={this.handleToggleEnglishTrans}
+          toggleShowENG={this.handleToggleTransClick}
+          hasENG={this.state.hasENG}
+          showENG={this.state.showENG}
         >
-          {this.props.children}
+          {children}
         </LayoutWrapper>
       </ThemeProvider>
     )

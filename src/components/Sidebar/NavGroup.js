@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import NavGroupHeader from './NavGroupHeader'
-import NavLinks from './NavLinks'
+import NavLinkItems from './NavLinkItems'
 
 const NavGroupItem = styled.li`
   list-style: none;
@@ -16,8 +16,6 @@ class NavGroup extends React.Component {
   }
 
   handleHeaderClick = () => {
-    this.props.resetGroups()
-
     this.setState(prevState => ({
       isActiveGroup: !prevState.isActiveGroup,
     }))
@@ -49,7 +47,7 @@ class NavGroup extends React.Component {
           title={title}
           clickHandler={this.handleHeaderClick}
         />
-        <NavLinks links={links} isActiveGroup={this.state.isActiveGroup} />
+        <NavLinkItems links={links} isActiveGroup={this.state.isActiveGroup} />
       </NavGroupItem>
     )
   }

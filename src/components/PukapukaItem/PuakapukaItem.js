@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import ReactPlayer from 'react-player'
 
 import ItemHeader from './ItemHeader'
-import TransToggleButton from './TransToggleButton'
 import ItemContent from './ItemContent'
 
 const ItemWrapper = styled(Box)`
@@ -29,35 +28,19 @@ const PlayerWrapper = styled(Box)`
 `
 
 class PukapukaItem extends React.Component {
-  state = {
-    showENG: false,
-    hasENG: false,
-  }
-
-  handleToggleTransClick = () => {
-    this.setState(prevState => ({
-      showENG: !prevState.showENG,
-    }))
-  }
-
   componentDidMount() {
     // if the first line has an english transalation then set the hasENG state to true
     // this determines if the toggle trans button is added to the DOM
-    this.setState({ hasENG: this.props.item.lines[0].eng })
+    let hasEngTranslation = false
+
+    if (this.props.item.lines[0].eng) {
+      hasEngTranslation = true
+    }
+
+    this.props.toggleHasENG(hasEngTranslation)
   }
 
   render(props) {
-    // only add the translation toggle button if there is english
-    let transToggleButton
-    if (this.state.hasENG) {
-      transToggleButton = (
-        <TransToggleButton
-          showENG={this.state.showENG}
-          toggleTrans={this.handleToggleTransClick}
-        />
-      )
-    }
-
     let reactPlayer
     if (this.props.item.youtube) {
       reactPlayer = (
@@ -75,18 +58,17 @@ class PukapukaItem extends React.Component {
 
     return (
       <ItemWrapper>
-        {transToggleButton}
         <ItemHeader
           title={this.props.item.heading.title}
           translation={this.props.item.heading.translation}
-          showENG={this.state.showENG}
+          showENG={this.props.showENG}
         />
 
         <ButtonWrapper />
 
         <ItemContent
           lines={this.props.item.lines}
-          showENG={this.state.showENG}
+          showENG={this.props.showENG}
         />
 
         {reactPlayer}

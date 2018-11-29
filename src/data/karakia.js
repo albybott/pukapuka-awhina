@@ -6,8 +6,9 @@ module.exports = {
   items: [
     {
       /* Item Start */
-      heading: { title: 'Opening Prayer' },
+      heading: { title: 'Opening Prayer', friendly: 'Opening Prayer' },
       group: 'Karakia',
+      slug: 'Opening Prayer',
       lines: [
         { maori: 'E te Atua', eng: 'Oh Creator of all things' },
         { maori: 'Manaakitia mātou', eng: 'watch over us' },

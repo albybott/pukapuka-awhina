@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
 
 import NavGroup from './NavGroup'
+import HomeLink from './HomeLink'
 
 const NavGroupWrapper = styled.ul`
   margin: 0;
@@ -10,14 +11,6 @@ const NavGroupWrapper = styled.ul`
 `
 
 class Nav extends React.Component {
-  state = {
-    resetGroupHeaders: false,
-  }
-
-  handleResetGroupHeaders = () => {
-    this.setState = { resetGroupHeaders: true }
-  }
-
   render({ location } = this.props) {
     return (
       <StaticQuery
@@ -39,7 +32,7 @@ class Nav extends React.Component {
           }
         `}
         render={data => {
-          // this will become our site pages put into groups
+          // this object will become our site pages put into groups
           let sitePages = {}
 
           // iterate over the data and prepare the site pages object
@@ -58,6 +51,7 @@ class Nav extends React.Component {
 
           return (
             <NavGroupWrapper>
+              <HomeLink />
               {Object.entries(sitePages).map(([key, value]) => {
                 return (
                   <NavGroup
@@ -67,8 +61,6 @@ class Nav extends React.Component {
                     links={value.links}
                     location={location}
                     root={value.root}
-                    reset={this.state.resetGroupHeaders}
-                    resetGroups={this.handleResetGroupHeaders}
                   />
                 )
               })}

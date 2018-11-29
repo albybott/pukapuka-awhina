@@ -5,7 +5,7 @@ import styled from 'styled-components'
 /**
  * This is the main content area component of the application
  */
-const ContentWrapper = styled(Box)`
+const ContentWrapper = styled.div`
   position: relative;
   top: ${props => props.theme.totalHeadHeight};
   height: 100vh;
@@ -33,10 +33,23 @@ const ContentContainer = styled(Box)`
   }
 `
 
-const Content = ({ children }) => (
-  <ContentWrapper>
-    <ContentContainer>{children}</ContentContainer>
-  </ContentWrapper>
-)
+const Content = ({ children, toggleHasENG, showENG }) => {
+  // this will loop through all of the children components, inject some props building a new array of children with props
+  // This is so we can pass use use functions on pages that update sate on the main Layout component
+  const childrenWithProps = React.Children.map(children, child => {
+    // the props passed are only used on this component
+    if (child.type.name === 'PukapukaItem') {
+      return React.cloneElement(child, { toggleHasENG, showENG })
+    }
+
+    return child
+  })
+
+  return (
+    <ContentWrapper>
+      <ContentContainer>{childrenWithProps}</ContentContainer>
+    </ContentWrapper>
+  )
+}
 
 export default Content

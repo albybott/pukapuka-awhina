@@ -1,10 +1,9 @@
 import React from 'react'
-import { Box } from 'rebass'
 import styled from 'styled-components'
 
 import Nav from './Nav'
 
-const SidebarWrapper = styled(Box)`
+const SidebarWrapper = styled.div`
   top: ${props => props.theme.totalHeadHeight};
   position: fixed;
   z-index: 10;
@@ -27,9 +26,9 @@ const SidebarWrapper = styled(Box)`
   z-index: 11; padding-top: 2rem;`};
 `
 
-const Sidebar = props => (
-  <SidebarWrapper showMobileNav={props.showMobileNav}>
-    <Nav location={props.location} />
+const Sidebar = ({ showMobileNav, location }) => (
+  <SidebarWrapper showMobileNav={showMobileNav}>
+    <Nav location={location} />
   </SidebarWrapper>
 )
 
