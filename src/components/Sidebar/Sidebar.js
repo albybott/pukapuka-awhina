@@ -7,8 +7,9 @@ import Nav from './Nav'
 const SidebarWrapper = styled(Box)`
   top: ${props => props.theme.totalHeadHeight};
   position: fixed;
-  z-index: 999;
-  height: calc(100vh - 85px);
+  z-index: 10;
+  height: 100vh;
+
   overflow-y: scroll;
   overflow-x: hidden;
   width: ${props => props.theme.sidebarWidth[3]};
@@ -27,7 +28,9 @@ const SidebarWrapper = styled(Box)`
   ${props =>
     props.theme.media.phone`${
       props.showMobileNav ? 'display: block' : 'display: none'
-    }`};
+    };
+    top: 0;
+  z-index: 11;`};
 `
 
 const Sidebar = props => (
