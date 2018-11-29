@@ -48,7 +48,7 @@ module.exports = {
     /* Item Start */
     {
       heading: {
-        title: 'He aha te mea nui o tēnei ao?',
+        title: 'He aha te mea nui o tēnei ao',
       },
       group: 'Whakatauki',
       lines: [
