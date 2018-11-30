@@ -4,8 +4,8 @@ import { Button, Box } from 'rebass'
 
 const MenuButtonWrapper = styled(Box)`
   position: absolute;
-  bottom: 30vh;
-  right: 20vw;
+  bottom: 40vh;
+  right: 30vw;
   display: none;
   z-index: 999;
 
