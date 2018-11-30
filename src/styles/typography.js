@@ -2,6 +2,7 @@ import Typography from 'typography'
 // import funstonTheme from 'typography-theme-funston'
 import githubTheme from 'typography-theme-github'
 
+githubTheme.baseFontSize = '20px'
 const typography = new Typography(githubTheme)
 
 // Hot reload typography in development.
