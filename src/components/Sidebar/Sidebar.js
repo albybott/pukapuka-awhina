@@ -7,9 +7,10 @@ const SidebarWrapper = styled.div`
   top: ${props => props.theme.totalHeadHeight};
   position: fixed;
   z-index: 10;
-  height: 100vh;
+  height: 100%;
+  padding: 0 0 ${props => props.theme.footerHeight * 2 + 1}rem 0;
 
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   width: ${props => props.theme.sidebarWidth[3]};
   background-color: ${props => props.theme.colors['third']};

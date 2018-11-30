@@ -36,6 +36,7 @@ class Nav extends React.Component {
           let sitePages = {}
 
           // iterate over the data and prepare the site pages object
+          // that will be used later to build the navigation
           data.allSitePage.edges.forEach(edge => {
             const group = edge.node.fields.group
             const title = edge.node.fields.title

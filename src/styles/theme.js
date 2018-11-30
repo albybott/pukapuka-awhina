@@ -47,7 +47,7 @@ const theme = {
   },
   bannerHeight: '3.5rem',
   headerHeight: '3rem',
-  footerHeight: 3,
+  footerHeight: 7,
   sidebarWidth: ['14rem', '16rem', '18rem', '18rem'],
   totalHeadHeight: '6.5rem',
 }

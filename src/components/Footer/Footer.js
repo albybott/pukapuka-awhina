@@ -14,8 +14,9 @@ const FooterWrapper = styled(Box)`
   border-top: 1px solid ${props => props.theme.colors['second']};
   background-color: #000;
 
-  height: 7rem;
-  ${props => props.theme.media.laptop`height: 6rem;`};
+  height: ${props => props.theme.footerHeight}rem;
+  ${props =>
+    props.theme.media.laptop`height: ${props.theme.footerHeight - 1}rem;`};
 `
 
 const LogoWrapper = styled(Box)`

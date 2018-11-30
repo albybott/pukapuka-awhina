@@ -43,7 +43,7 @@ class NavGroup extends React.Component {
     return (
       <NavGroupItem>
         <NavGroupHeader
-          active={this.state.isActiveGroup}
+          isActiveGroup={this.state.isActiveGroup}
           title={title}
           clickHandler={this.handleHeaderClick}
         />

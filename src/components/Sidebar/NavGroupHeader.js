@@ -32,6 +32,7 @@ const NavGroupHeaderButton = styled(Button)`
 
   &.current {
     color: ${props => props.theme.colors['main']};
+    font-weight: bold;
   }
 `
 
@@ -47,9 +48,11 @@ const SectionArrow = styled(Image)`
   }
 `
 
-const NavGroupHeader = ({ title, clickHandler, active }) => {
+const NavGroupHeader = ({ title, clickHandler, isActiveGroup }) => {
+  // create an active class if this is an active navigation group
+  // this will add styling to the group header and svg arrow
   let activeClassName
-  if (active) {
+  if (isActiveGroup) {
     activeClassName = 'current'
   }
 

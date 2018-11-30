@@ -54,7 +54,7 @@ const HomeLink = styled(Link)`
   }
 `
 
-export default props => (
+export default () => (
   <HomeLinkWrapper>
     <HomeLink activeClassName="current" to="/">
       <Home className="home-link__icon" width="1rem" />

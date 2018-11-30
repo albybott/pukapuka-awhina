@@ -5,7 +5,7 @@ import NavLinkItem from './NavLinkItem'
 import NavLink from './NavLink'
 
 const NavLinkList = styled.ul`
-  padding: 0;
+  padding: 0 0 0 1rem;
   margin: 0;
 `
 

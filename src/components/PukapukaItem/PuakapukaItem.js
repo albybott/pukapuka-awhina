@@ -40,7 +40,7 @@ class PukapukaItem extends React.Component {
     this.props.toggleHasENG(hasEngTranslation)
   }
 
-  render(props) {
+  render() {
     let reactPlayer
     if (this.props.item.youtube) {
       reactPlayer = (

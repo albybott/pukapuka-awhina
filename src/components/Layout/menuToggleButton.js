@@ -33,9 +33,9 @@ const MenuButton = styled(Button)`
   }
 `
 
-const MenuToggleButton = props => (
+const MenuToggleButton = ({ toggleSidebarClick }) => (
   <MenuButtonWrapper>
-    <MenuButton onClick={props.toggleSidebarClick}>MENU</MenuButton>
+    <MenuButton onClick={toggleSidebarClick}>MENU</MenuButton>
   </MenuButtonWrapper>
 )
 

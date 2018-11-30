@@ -33,9 +33,9 @@ const BannerText = styled(Box)`
   white-space: nowrap;
 `
 
-const Banner = props => (
+const Banner = ({ msg }) => (
   <BannerWrapper>
-    <BannerText>{props.msg}</BannerText>
+    <BannerText>{msg}</BannerText>
   </BannerWrapper>
 )
 

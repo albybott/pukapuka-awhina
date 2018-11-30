@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 const NavLinkItem = styled.li`
-  list-style: none;
-  padding: 0 0 0 1rem;
+  list-style-type: hidden;
   margin: 0;
 
   color: ${props => props.theme.colors['third']};
 
   :hover {
-    color: ${props => props.theme.colors['second']};
+    color: ${props => props.theme.colors['text']};
+    list-style-type: disc;
   }
 `
 
