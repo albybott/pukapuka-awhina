@@ -6,6 +6,7 @@ import styled from 'styled-components'
 
 import TransToggleButton from './TransToggleButton'
 import Search from './Search'
+import favIcon from '../../images/nmo-icon-48x48.png'
 
 const HeaderWrapper = styled(Flex)`
   top: ${props => props.theme.bannerHeight};
@@ -58,6 +59,9 @@ const Header = props => (
             meta={[
               { name: 'description', content: 'Sample' },
               { name: 'keywords', content: 'sample, something' },
+            ]}
+            link={[
+              { rel: 'shortcut icon', type: 'image/png', href: `${favIcon}` },
             ]}
           >
             <html lang="en" />
