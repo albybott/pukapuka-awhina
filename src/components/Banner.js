@@ -1,5 +1,6 @@
 import React from 'react'
-import { Flex, Box } from 'rebass'
+import { Flex } from 'rebass'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 /**
@@ -19,23 +20,22 @@ const BannerWrapper = styled(Flex)`
 
   justify-content: flex-start;
   align-items: center;
+  white-space: nowrap; /* white-space: nowrap prevents the banner text from wrapping when the screen width becomes too small */
 
-  div,
   a {
     color: ${props => props.theme.colors['bannerTxt']};
     font-size: 1.5rem;
     font-weight: bold;
-  }
-`
 
-// white-space: nowrap prevents the banner text from wrapping when the screen width becomes too small
-const BannerText = styled(Box)`
-  white-space: nowrap;
+    :hover {
+      text-decoration: none;
+    }
+  }
 `
 
 const Banner = ({ msg }) => (
   <BannerWrapper>
-    <BannerText>{msg}</BannerText>
+    <Link to="/">{msg}</Link>
   </BannerWrapper>
 )
 
