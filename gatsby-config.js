@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'he-pukapuka-awhina',
+        name: 'He Pukapuka Āwhina',
         short_name: 'Pukapuka Āwhina',
         start_url: '/',
         background_color: '#96a34a',
