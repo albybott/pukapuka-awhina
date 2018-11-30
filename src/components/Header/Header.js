@@ -57,8 +57,15 @@ const Header = props => (
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
+              {
+                name: 'description',
+                content: 'He Pukapuka Awhina mō ngā Whānau',
+              },
+              {
+                name: 'keywords',
+                content:
+                  'pukapuka, awhina, maori, reo, karakia, waiata, karanga, tautoko',
+              },
             ]}
             link={[
               { rel: 'shortcut icon', type: 'image/png', href: `${favIcon}` },

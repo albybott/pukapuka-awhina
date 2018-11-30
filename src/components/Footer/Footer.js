@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Image } from 'rebass'
 import styled from 'styled-components'
-import Logo from '../../images/nmo-logo-full.png'
+import Logo from '../../images/nmo-logo.png'
 import FooterBG from '../../images/nmo-footer.jpg'
 
 const FooterWrapper = styled(Box)`

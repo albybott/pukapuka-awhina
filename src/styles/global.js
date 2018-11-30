@@ -11,10 +11,10 @@ const GlobalStyle = createGlobalStyle`
     /* use typography.scale to adjust fonts by veiwport size */
     ${{ ...scale(7 / 16) }}
 
-    ${props => props.theme.media.desktop`${{ ...scale(7 / 16) }}`};
+    /* ${props => props.theme.media.desktop`${{ ...scale(7 / 16) }}`};
     ${props => props.theme.media.laptop`${{ ...scale(5 / 16) }}`};
     ${props => props.theme.media.tablet`${{ ...scale(3 / 16) }}`};
-    ${props => props.theme.media.phone`${{ ...scale(2 / 16) }}`};
+    ${props => props.theme.media.phone`${{ ...scale(2 / 16) }}`}; */
   }
 
   img {
