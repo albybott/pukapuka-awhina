@@ -22,6 +22,7 @@ const HeaderWrapper = styled(Flex)`
 
   align-items: center;
   justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 15px;
 `
 
 const HeaderButtonWrapper = styled(Flex)`
