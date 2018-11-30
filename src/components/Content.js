@@ -38,9 +38,9 @@ const Content = ({ children, toggleHasENG, showENG }) => {
   // This is so we can pass use use functions on pages that update sate on the main Layout component
   const childrenWithProps = React.Children.map(children, child => {
     // the props passed are only used on this component
-    if (child.type.name !== 'PukapukaItem') {
-      return child
-    }
+    // if (child.type.name !== 'PukapukaItem') {
+    //   return child
+    // }
     return React.cloneElement(child, { toggleHasENG, showENG })
   })
 
