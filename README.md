@@ -1,17 +1,15 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://pukapuka.awhina.tech">
+    <img alt="Gatsby" src="https://pukapuka.awhina.tech/static/nmo-logo-8dc8daf1c34307e7c74a001c4b630dab.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  He Pukapuka Āwhina
 </h1>
 
-Kick off your project with this default boilerplate. This barebones starter ships with the main Gatsby configuration files you might need.
+Kia ora! This site was created by Ngā Mataapuna Oranga in Tauranga Moana. It was developed to assist whanau that may not have access to kaumātua or support people to facilitate basic karakia, mihimihi, karanga, waiata and whakatauki.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
-
-## 🚀 Setup
+## 🚀 Tech Used
 
 1.  **Styled Components**
 
@@ -23,9 +21,9 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     npm install --save gatsby-plugin-styled-components styled-components babel-plugin-styled-components
     ```
 
-    ***Theme Provider***
+    **_Theme Provider_**
     The theme provider makes the main theme configuration available the application
-    
+
     src/styles/theme.js
 
     This means the values in the theme file can be used with the styled components css and is also utilised by Rebass
@@ -35,7 +33,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     ${props => props.theme.media.phone`color: ${props.theme.main}`};
     ```
 
-    ***Global Styles***
+    **_Global Styles_**
     [GlobalStyle](https://www.styled-components.com/docs/api#createglobalstyle)
 
     Global styles is part of the Styled Components Library and provides a centralised global css stylesheet
@@ -48,16 +46,16 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     h1 {
       color: ${props => props.theme.colors['secondary']};
     }
-    ``` 
+    ```
 
 1.  **CSS Helpers**
 
-    ***Normalize CSS***
+    **_Normalize CSS_**
     [styled-normalize](https://github.com/sergeysova/styled-normalize)
 
     CSS-normalize library for styled-components.
 
-    ***Typgraphy.js***
+    **_Typgraphy.js_**
     [gatsby-plugin-typography](https://www.gatsbyjs.org/packages/gatsby-plugin-typography/?=typ)
 
     Configuration File:
