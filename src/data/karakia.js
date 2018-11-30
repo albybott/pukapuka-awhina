@@ -6,7 +6,7 @@ module.exports = {
   items: [
     {
       /* Item Start */
-      heading: { title: 'Opening Prayer', friendly: 'Opening Prayer' },
+      heading: { title: 'Opening Prayer' },
       group: 'Karakia',
       slug: 'Opening Prayer',
       lines: [

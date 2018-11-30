@@ -6,7 +6,7 @@ module.exports = {
   items: [
     /* Item Start */
     {
-      heading: { title: 'Te Arohā' },
+      heading: { title: 'Te Arohā', friendly: 'Te Aroha' },
       group: 'Waiata Tautoko',
       youtube: 'https://www.youtube.com/watch?v=uefJdSCkzPo',
       lines: [
@@ -17,7 +17,10 @@ module.exports = {
     },
     /* Item Start */
     {
-      heading: { title: 'Mā wai rā e taurima' },
+      heading: {
+        title: 'Mā wai rā e taurima',
+        friendly: 'Ma wai ra e taurima',
+      },
       group: 'Waiata Tautoko',
       youtube: 'https://www.youtube.com/watch?v=dGF9WMFXpYw',
       lines: [
@@ -28,7 +31,7 @@ module.exports = {
     },
     /* Item Start */
     {
-      heading: { title: 'Moe mai e hine/tama' },
+      heading: { title: 'Moe mai e hine/tama', friendly: 'Moe mai e' },
       group: 'Waiata Tautoko',
       youtube: 'https://www.youtube.com/watch?v=1_ZL2zYtIXE',
       lines: [
@@ -43,7 +46,10 @@ module.exports = {
     },
     /* Item Start */
     {
-      heading: { title: 'E ngā iwi e haere mai, haere mai' },
+      heading: {
+        title: 'E ngā iwi e haere mai',
+        friendly: 'E nga iwi e haere mai',
+      },
       group: 'Waiata Tautoko',
       youtube: 'https://www.youtube.com/watch?v=nVeJHToYOQk',
       lines: [
@@ -77,7 +83,7 @@ module.exports = {
     },
     /* Item Start */
     {
-      heading: { title: 'Māku e mihi atu' },
+      heading: { title: 'Māku e mihi atu', friendly: 'Maku e mihi atu' },
       group: 'Waiata Tautoko',
       youtube: 'https://www.youtube.com/watch?v=RyLTVBC-54s ',
       lines: [

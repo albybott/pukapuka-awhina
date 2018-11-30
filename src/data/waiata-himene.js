@@ -35,7 +35,7 @@ module.exports = {
     },
     /* Item Start */
     {
-      heading: { title: 'Tama Ngākau' },
+      heading: { title: 'Tama Ngākau', friendly: 'Tama Ngakau' },
       group: 'Waiata Himene',
       youtube: 'https://www.youtube.com/watch?v=zvh-_h0M0Yk&list=RDzvh-_h0M0Yk',
       lines: [
@@ -73,7 +73,7 @@ module.exports = {
     },
     /* Item Start */
     {
-      heading: { title: 'Piki mai, kake mai' },
+      heading: { title: 'Piki mai, kake mai', friendly: 'Piki mai kake mai' },
       group: 'Waiata Himene',
       youtube: 'https://www.youtube.com/watch?v=LLx7QVgP8W8',
       lines: [
