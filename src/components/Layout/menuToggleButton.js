@@ -4,9 +4,9 @@ import { Button, Box } from 'rebass'
 
 const MenuButtonWrapper = styled(Box)`
   position: absolute;
-  bottom: 144px;
-  right: 112px;
-  height: 60px;
+  bottom: 176px;
+  right: 80px;
+  height: 30px;
   display: none;
   z-index: 999;
 
@@ -16,18 +16,18 @@ const MenuButtonWrapper = styled(Box)`
 const MenuButton = styled(Button)`
   padding: 0.3rem;
   position: fixed;
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
 
   background-color: ${props => props.theme.colors['main']};
   border: 1px solid ${props => props.theme.colors['third']};
   border-radius: 5rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;
 
-  &:hover {
+  /* &:hover {
     background-color: ${props => props.theme.colors['bannerTxt']};
     border: 1px solid ${props => props.theme.colors['second']};
-  }
+  } */
 
   &:focus {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;
