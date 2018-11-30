@@ -43,6 +43,7 @@ const theme = {
     fourth: '#878787', // background - slightly darker
     bannerBg: '#000',
     bannerTxt: '#96a34a', // banner text
+    transBg: '#fdfaf6', // banner text
     text: 'rgba(0, 0, 0, 0.88)', // default text color
   },
   bannerHeight: '3.5rem',

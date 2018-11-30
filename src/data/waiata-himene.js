@@ -25,6 +25,7 @@ module.exports = {
       group: 'Waiata Himene',
       youtube: 'https://www.youtube.com/watch?v=9hxubCgwT-c&t=4s',
       lines: [
+        { maori: 'Whakaaria Mai' },
         { maori: 'Tō ripeka ki au' },
         { maori: 'Tiaho mai' },
         { maori: 'Rā roto i te po' },
@@ -39,6 +40,7 @@ module.exports = {
       group: 'Waiata Himene',
       youtube: 'https://www.youtube.com/watch?v=zvh-_h0M0Yk&list=RDzvh-_h0M0Yk',
       lines: [
+        { maori: 'Tama Ngākau' },
         { maori: 'Tama a te Atua' },
         { maori: 'Tēnei tonu mātou' },
         { maori: 'Arohaina mai' },
@@ -60,6 +62,7 @@ module.exports = {
       group: 'Waiata Himene',
       youtube: 'https://www.youtube.com/watch?v=1kcUul5LKn0',
       lines: [
+        { maori: 'Ka waiata ki a Maria' },
         { maori: 'Hine i whakaae' },
         { maori: 'Whakameatia mai' },
         { maori: 'Te whare tangata' },
@@ -77,6 +80,7 @@ module.exports = {
       group: 'Waiata Himene',
       youtube: 'https://www.youtube.com/watch?v=LLx7QVgP8W8',
       lines: [
+        { maori: 'Piki mai, kake mai' },
         { maori: 'Whakarongo ki te tangi' },
         { maori: 'a te huia hui hui mai tatou' },
         { maori: 'Whitiwhiti kōrero, whuia ki te ao e' },

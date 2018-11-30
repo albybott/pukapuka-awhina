@@ -10,6 +10,7 @@ module.exports = {
       group: 'Waiata Tautoko',
       youtube: 'https://www.youtube.com/watch?v=uefJdSCkzPo',
       lines: [
+        { maori: 'Te Arohā' },
         { maori: 'Te Whakapono' },
         { maori: 'mē te rangimarie' },
         { maori: 'Tātou tātou e' },
@@ -24,6 +25,7 @@ module.exports = {
       group: 'Waiata Tautoko',
       youtube: 'https://www.youtube.com/watch?v=dGF9WMFXpYw',
       lines: [
+        { maori: 'Mā wai rā e taurima' },
         { maori: 'Te marae i waho nei?' },
         { maori: 'Mā te tika, mā te pono' },
         { maori: 'mē te arohā e' },
@@ -35,6 +37,7 @@ module.exports = {
       group: 'Waiata Tautoko',
       youtube: 'https://www.youtube.com/watch?v=1_ZL2zYtIXE',
       lines: [
+        { maori: 'Moe mai e hine/tama' },
         { maori: 'I tō moenga roa' },
         { maori: 'raro i te rata' },
         { maori: 'Mokemoke ai' },
@@ -53,6 +56,7 @@ module.exports = {
       group: 'Waiata Tautoko',
       youtube: 'https://www.youtube.com/watch?v=nVeJHToYOQk',
       lines: [
+        { maori: 'E ngā iwi e haere mai' },
         { maori: 'Haere mai, haere mai e ngā iwi e' },
         { maori: 'Haere mai ki runga o te marae' },
         { maori: 'Hui mai tātou katoa' },
@@ -70,6 +74,7 @@ module.exports = {
       group: 'Waiata Tautoko',
       youtube: 'https://www.youtube.com/watch?v=n8uN4l3MkNs',
       lines: [
+        { maori: 'Whakataurangi ake te here' },
         { maori: 'I taku ate, pupū ake nei' },
         { maori: 'Te mauri o te arohā' },
         { maori: 'Hei hononga ki te iwi' },
@@ -87,6 +92,7 @@ module.exports = {
       group: 'Waiata Tautoko',
       youtube: 'https://www.youtube.com/watch?v=RyLTVBC-54s ',
       lines: [
+        { maori: 'Māku e mihi atu' },
         { maori: 'Ki a koutou te iwi Māori e' },
         { maori: 'Nō reira tēnei te mihi' },
         { maori: 'Ki a koutou kia ora ra' },
@@ -100,6 +106,7 @@ module.exports = {
       group: 'Waiata Tautoko',
       youtube: 'https://www.youtube.com/watch?v=aihyP-tmJvg',
       lines: [
+        { maori: 'Hine tangi manawa' },
         { maori: 'Hine tangi manawa ki ahau' },
         { maori: 'Hine arohaina e te tau' },
         { maori: 'Mē pine ai te pine pai' },
@@ -118,6 +125,7 @@ module.exports = {
       group: 'Waiata Tautoko',
       youtube: 'https://www.youtube.com/watch?v=yBHcm6Ud01o ',
       lines: [
+        { maori: 'Hoki hoki tonu mai' },
         { maori: 'Te wairua o te tau' },
         { maori: 'Ki te awhi reinga' },
         { maori: 'Ki tēnei kiri e' },

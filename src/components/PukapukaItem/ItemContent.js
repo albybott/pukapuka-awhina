@@ -12,7 +12,7 @@ const Trans = styled.span`
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
     Courier New, monospace;
 
-  background: #fdfaf6;
+  background: ${props => props.theme.colors['transBg']};
   font-size: 0.9em;
   padding: 0.4rem 0;
   margin: 0;

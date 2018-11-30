@@ -49,6 +49,7 @@ class PukapukaItem extends React.Component {
             className="react-player"
             url={this.props.item.youtube}
             playing={false}
+            controls={true}
             width="100%"
             height="100%"
           />
